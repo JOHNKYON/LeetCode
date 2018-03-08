@@ -1,11 +1,13 @@
-import questions.twoSum.TwoSum;
+import questions.addTwoNumbers.AddTwoNumbers;
 
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args){
-        TwoSum twoSum = new TwoSum();
-        System.out.println(Arrays.toString(twoSum.twoSum(new int[]{1, 2, 3, 4, 5}, 8)));
+        AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
+        addTwoNumbers.printList(addTwoNumbers.addTwoNumbers(
+                addTwoNumbers.buildTestData(new int[]{1,2,3,5}),
+                addTwoNumbers.buildTestData(new int[]{2,3,4,5})
+        ));
     }
 
 }
