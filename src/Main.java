@@ -1,9 +1,11 @@
-import questions.longestSubstringWithoutRep.LongestSubStringWithoutRep;
+import questions.medianOfTwoSortedArrays.MedianOfTwoSortedArrays;
 
 public class Main {
     public static void main(String[] args){
-        LongestSubStringWithoutRep sub = new LongestSubStringWithoutRep();
-        System.out.print(sub.longest("abcabcbb"));
+        MedianOfTwoSortedArrays median = new MedianOfTwoSortedArrays();
+        int[] nums1 = {1,3};
+        int[] nums2 = {2};
+        System.out.print(median.findMedian(nums1, nums2));
     }
 
 }
