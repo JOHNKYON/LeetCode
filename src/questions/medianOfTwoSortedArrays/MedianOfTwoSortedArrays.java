@@ -12,7 +12,7 @@ public class MedianOfTwoSortedArrays {
         * max(left) < min(right)
         * */
 
-       //TODO: Not accepted by LeetCode so far
+       //TODO: Need to re-construct the code. The code is like shit now.
         int len1 = nums1.length, len2 = nums2.length;
         int total = len1 + len2;
         boolean flag = false;       //If total is even, flag is true, otherwise, flag is false.
