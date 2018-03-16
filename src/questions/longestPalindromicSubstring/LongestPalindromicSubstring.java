@@ -23,29 +23,29 @@ public class LongestPalindromicSubstring {
     }
 
     private String PrepareString(String s){
-        /**
-         * This is a function that prepare String s for further search.
-         * It does two things:
-         * 1: It add a # to every char in s, for example: aba -> a#b#a#.
-         * 2: It add a $ in the begin of the string, foe example: a#b#a# - > $a#b#a#$
-         * This makes every string with a even length and causes no edge errors.
+        /*
+          This is a function that prepare String s for further search.
+          It does two things:
+          1: It add a # to every char in s, for example: aba -> a#b#a#.
+          2: It add a $ in the begin of the string, foe example: a#b#a# - > $#a#b#a#$
+          This makes every string with a even length and causes no edge errors.
          */
-        char[] s2 = new char[s.length()*2+2];
-        s2[0] = '$';
-        s2[s.length()*2+1] = '$';
+        char[] s2 = new char[s.length()*2+3];
+        s2[0] = '$'; s2[1] = '#';
+        s2[s.length()*2+2] = '$';
         for (int i = 0; i < s.length(); i ++){
             int i2 = i*2;
-            s2[i2+1] = s.charAt(i);
-            s2[i2+2] = '#';
+            s2[i2+2] = s.charAt(i);
+            s2[i2+3] = '#';
         }
         return new String(s2);
     }
 
     private int LongestAt(String s, int index){
-        /**
-         * This is a function that calculates the length of the longest palindromic substring of
-         * a string "s" with the middle if the substring at position "index".
-         * */
+        /*
+          This is a function that calculates the length of the longest palindromic substring of
+          a string "s" with the middle if the substring at position "index".
+          */
         int length = 0;
         while (s.charAt(index-length) == s.charAt(index+length) && '$'!=s.charAt(index-length) && '$'!=s.charAt(index+length)){
             length++;
@@ -55,7 +55,7 @@ public class LongestPalindromicSubstring {
 
     private String Recover(String s){
 //        List<Character> s2 = new ArrayList<Character>();
-        char[] chars = new char[(s.length()+1)/2];
+        char[] chars = new char[(s.length())/2];
         for (int i = 0; i < s.length(); i++){
             if ('#' != s.charAt(i) && '$' != s.charAt(i)){
                 chars[i/2] = s.charAt(i);
