@@ -5,7 +5,6 @@ package questions.zigZagConversion;
  * This is a solution to LeetCode Questions.
  */
 public class ZigZagConversion {
-//    TODO:Finish the math calculation of the index.
 
     public String ZigZagConversion(String s, int numRows){
         char[] sNew = new char[s.length()];
