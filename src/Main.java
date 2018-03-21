@@ -1,10 +1,10 @@
-import questions.longestPalindromicSubstring.LongestPalindromicSubstring;
+import questions.zigZagConversion.ZigZagConversion;
 
 public class Main {
     public static void main(String[] args){
-        LongestPalindromicSubstring method = new LongestPalindromicSubstring();
-        String s = "babab";
-        System.out.print(method.longestSubstring(s));
+        ZigZagConversion method = new ZigZagConversion();
+        String s = "PAYPALISHIRING";
+        System.out.print(method.ZigZagConversion(s,3));
     }
 
 }
