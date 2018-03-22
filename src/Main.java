@@ -1,10 +1,10 @@
-import questions.zigZagConversion.ZigZagConversion;
+import questions.reverseInteger.ReverseInteger;
 
 public class Main {
     public static void main(String[] args){
-        ZigZagConversion method = new ZigZagConversion();
-        String s = "PAYPALISHIRING";
-        System.out.print(method.ZigZagConversion(s,3));
+        ReverseInteger method = new ReverseInteger();
+        int i = -123;
+        System.out.print(method.reverse(i));
     }
 
 }
