@@ -1,10 +1,11 @@
-import questions.palindromeNumber.PalindromeNumber;
+import questions.regularExpressionMatching.RegularExpressionMatching;
 
 public class Main {
     public static void main(String[] args){
-        PalindromeNumber method = new PalindromeNumber();
-        int i = 1;
-        System.out.print(method.isPalindrome(i));
+        RegularExpressionMatching method = new RegularExpressionMatching();
+        String s = "aab";
+        String p = "c*a*b";
+        System.out.print(method.isMatch(s, p));
     }
 
 }
