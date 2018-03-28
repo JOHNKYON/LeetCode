@@ -1,10 +1,10 @@
-import questions.stringToInteger.StringToInteger;
+import questions.palindromeNumber.PalindromeNumber;
 
 public class Main {
     public static void main(String[] args){
-        StringToInteger method = new StringToInteger();
-        String s = "   - 321";
-        System.out.print(method.myAtoi(s));
+        PalindromeNumber method = new PalindromeNumber();
+        int i = 1;
+        System.out.print(method.isPalindrome(i));
     }
 
 }
