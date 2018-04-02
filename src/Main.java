@@ -1,11 +1,12 @@
 import questions.leetcode20.ValidParentheses;
+import questions.leetcode22.GenerateParentheses;
 
 public class Main {
     public static void main(String[] args){
-        ValidParentheses method = new ValidParentheses();
-        String s = "({[{}]})";
+        GenerateParentheses method = new GenerateParentheses();
+        int n = 1;
 
-        System.out.print(method.isValid(s));
+        System.out.print(method.generateParenthesis(n));
     }
 
 }
