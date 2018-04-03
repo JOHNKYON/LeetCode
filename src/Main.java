@@ -1,15 +1,16 @@
-import questions.leetcode31.NextPremutation;
 import questions.leetcode42.TrappingRainWater;
+import questions.leetcode44.WildCardMatching;
 
 public class Main {
     public static void main(String[] args){
-        TrappingRainWater method = new TrappingRainWater();
-        int[] nums = {5,5,1,7,1,1,5,2,7,6};
+        WildCardMatching method = new WildCardMatching();
+        String s = "";
+        String p = "*";
 //        method.trap(nums);
 //        for (int i : nums){
 //            System.out.print(i);
 //        }
-        System.out.print(method.trap(nums));
+        System.out.print(method.isMatch(s, p));
     }
 
 }
