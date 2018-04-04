@@ -1,16 +1,15 @@
-import questions.leetcode42.TrappingRainWater;
-import questions.leetcode44.WildCardMatching;
+import questions.leetcode50.PowXN;
 
 public class Main {
     public static void main(String[] args){
-        WildCardMatching method = new WildCardMatching();
-        String s = "";
-        String p = "*";
+        PowXN method = new PowXN();
+        double x = 2.1;
+        int n = 3;
 //        method.trap(nums);
 //        for (int i : nums){
 //            System.out.print(i);
 //        }
-        System.out.print(method.isMatch(s, p));
+        System.out.print(method.myPow(x, n));
     }
 
 }
