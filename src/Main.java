@@ -1,18 +1,24 @@
 import questions.leetcode50.PowXN;
 import questions.leetcode54.SpiralMatrix;
+import questions.leetcode56.MergeIntervals;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args){
-        SpiralMatrix method = new SpiralMatrix();
-        int[][] matrix =    {{1,2,3,4},
-                            {5,6,7,8},
-                            {9,10,11,12},
-                            {13,14,15,16}};
+        MergeIntervals method = new MergeIntervals();
+        List<MergeIntervals.Interval> intervals = new ArrayList<MergeIntervals.Interval>(){{
+            add(method.createInterval(1,3));
+            add(method.createInterval(2,6));
+            add(method.createInterval(8,10));
+            add(method.createInterval(15,18));
+        }};
 //        method.trap(nums);
 //        for (int i : nums){
 //            System.out.print(i);
 //        }
-        System.out.print(method.spiralOrder(matrix).toString());
+        System.out.print(method.merge(intervals).toString());
     }
 
 }
