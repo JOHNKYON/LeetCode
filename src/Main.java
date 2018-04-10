@@ -1,11 +1,11 @@
-import questions.leetcode146.LRUCache;
 import questions.leetcode155.MinStack;
+import questions.leetcode162.FindPeakElement;
 
 
 public class Main {
     public static void main(String[] args){
 
-        MinStack minStack = new MinStack();
+        FindPeakElement method = new FindPeakElement();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -21,13 +21,8 @@ public class Main {
 //        }
 
 
-        minStack.push(-2);
-        minStack.push(0);
-        minStack.push(-3);
-        System.out.print(minStack.getMin());   //--> Returns -3.
-        minStack.pop();
-        System.out.print(minStack.top());      //--> Returns 0.
-        System.out.print(minStack.getMin());   //--> Returns -2.
+        int[] nums = {1};
+        System.out.print(method.findPeakElement(nums));
     }
 
 }
