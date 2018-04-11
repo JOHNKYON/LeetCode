@@ -1,4 +1,3 @@
-import questions.leetcode155.MinStack;
 import questions.leetcode162.FindPeakElement;
 
 
@@ -21,8 +20,8 @@ public class Main {
 //        }
 
 
-        int[] nums = {1};
-        System.out.print(method.findPeakElement(nums));
+        int[] nums = {1,2,3,1};
+        System.out.println(method.findPeakElement(nums));
     }
 
 }
