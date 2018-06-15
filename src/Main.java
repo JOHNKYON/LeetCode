@@ -1,10 +1,10 @@
-import questions.leetcode162.FindPeakElement;
+import questions.codility.WordMachine;
 
 
 public class Main {
     public static void main(String[] args){
 
-        FindPeakElement method = new FindPeakElement();
+        WordMachine method = new WordMachine();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -20,8 +20,8 @@ public class Main {
 //        }
 
 
-        int[] nums = {1,2,3,1};
-        System.out.println(method.findPeakElement(nums));
+        String operation = "5 POP ";
+        System.out.println(method.solution(operation));
     }
 
 }
