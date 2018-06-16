@@ -1,10 +1,10 @@
-import questions.codility.WordMachine;
+import questions.leetcode200.NumberOfIslands;
 
 
 public class Main {
     public static void main(String[] args){
 
-        WordMachine method = new WordMachine();
+        NumberOfIslands method = new NumberOfIslands();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -20,8 +20,8 @@ public class Main {
 //        }
 
 
-        String operation = "5 POP ";
-        System.out.println(method.solution(operation));
+        char[][] grid = {{'1','1','0','0','0'},{'1','1','0','0','0'},{'0','0','1','0','0'},{'0','0','0','1','1'}};
+        System.out.println(method.numberOfIslands(grid));
     }
 
 }
