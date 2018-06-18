@@ -1,10 +1,10 @@
-import questions.leetcode200.NumberOfIslands;
+import questions.leetcode208.MyTrie;
 
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        NumberOfIslands method = new NumberOfIslands();
+        MyTrie method = new MyTrie();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -20,8 +20,7 @@ public class Main {
 //        }
 
 
-        char[][] grid = {{'1','1','0','0','0'},{'1','1','0','0','0'},{'0','0','1','0','0'},{'0','0','0','1','1'}};
-        System.out.println(method.numberOfIslands(grid));
+        method.insert("apple");
+        System.out.print(method.search("apple"));
     }
-
 }
