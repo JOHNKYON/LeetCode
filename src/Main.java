@@ -1,10 +1,10 @@
-import questions.leetcode224.BasicCalculator;
+import questions.leetcode231.PowerOfTwo;
 
 
 public class Main {
     public static void main(String[] args) {
 
-        BasicCalculator method = new BasicCalculator();
+        PowerOfTwo method = new PowerOfTwo();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -20,6 +20,6 @@ public class Main {
 //        }
 
         int[][] input = new int[][]{{2,9,10},{3,7,15},{5,12,12},{15,20,10},{19,24,8}};
-        System.out.print(method.calculate("(1+(4+5+2)-3)+(6+8)"));
+        System.out.print(method.isPowerOfTwo(218));
     }
 }
