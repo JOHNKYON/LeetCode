@@ -1,10 +1,11 @@
-import questions.leetcode228.SummaryRanges;
+
+import questions.leetcode239.SlidingWindowMaximum;
 
 
 public class Main {
     public static void main(String[] args) {
 
-        SummaryRanges method = new SummaryRanges();
+        SlidingWindowMaximum method = new SlidingWindowMaximum();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -19,7 +20,7 @@ public class Main {
 //            i.print();
 //        }
 
-        int[] input = new int[]{0,1,2,4,5};
-        System.out.print(method.summaryRanges(input));
+        int[] input = new int[]{1,3,-1,-3,5,3,6,7};
+        System.out.print(method.maxSlidingWindow(input, 3));
     }
 }
