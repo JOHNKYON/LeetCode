@@ -1,6 +1,5 @@
 import questions.leetcode240.Search2DMatrix;
 
-
 public class Main {
     public static void main(String[] args) {
 
