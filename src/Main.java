@@ -1,10 +1,10 @@
-import questions.leetcode32.LongestValidParentheses;
-import questions.leetcode46.Permutation;
+
+import questions.leetcode48.RotateImage;
 
 public class Main {
     public static void main(String[] args) {
 
-        Permutation method = new Permutation();
+        RotateImage method = new RotateImage();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -18,7 +18,8 @@ public class Main {
 //        for (InsertInterval.Interval i : method.insert(intervals, interval)){
 //            i.print();
 //        }
-        int[] nums = {1,2};
-        System.out.print(method.permute(nums));
+        int[][] nums = {{1,2,3},{4,5,6},{7,8,9}};
+        method.rotate(nums);
+//        System.out.print(method.rotate(nums););
     }
 }
