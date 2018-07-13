@@ -1,10 +1,9 @@
-
-import questions.leetcode48.RotateImage;
+import questions.leetcode76.MinimumWindowSubstring;
 
 public class Main {
     public static void main(String[] args) {
 
-        RotateImage method = new RotateImage();
+        MinimumWindowSubstring method = new MinimumWindowSubstring();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -19,7 +18,7 @@ public class Main {
 //            i.print();
 //        }
         int[][] nums = {{1,2,3},{4,5,6},{7,8,9}};
-        method.rotate(nums);
+        method.minWindow("aa","aa");
 //        System.out.print(method.rotate(nums););
     }
 }
