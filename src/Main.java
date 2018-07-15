@@ -1,10 +1,9 @@
-import questions.leetcode79.WordSearch;
-import questions.leetcode84.LargestRectangleInHistogram;
+import questions.leetcode85.MaximalRectangle;
 
 public class Main {
     public static void main(String[] args) {
 
-        LargestRectangleInHistogram method = new LargestRectangleInHistogram();
+        MaximalRectangle method = new MaximalRectangle();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -18,8 +17,8 @@ public class Main {
 //        for (InsertInterval.Interval i : method.insert(intervals, interval)){
 //            i.print();
 //        }
-        int[] bars = {2,1,5,6,2,3};
-        method.largestRectangleArea(bars);
+        int[][] bars = {{1,0,1,0,0}};
+        method.maximalRectangle(bars);
 //        System.out.print(method.rotate(nums););
     }
 }
