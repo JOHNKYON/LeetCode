@@ -17,7 +17,7 @@ public class Main {
 //        for (InsertInterval.Interval i : method.insert(intervals, interval)){
 //            i.print();
 //        }
-        int[][] bars = {{1,0,1,0,0}};
+        char[][] bars = {{'1','0','1','0','0'}};
         method.maximalRectangle(bars);
 //        System.out.print(method.rotate(nums););
     }
