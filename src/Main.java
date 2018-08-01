@@ -1,9 +1,9 @@
-import questions.leetcode85.MaximalRectangle;
+import questions.leetcode297.SerializeandDeserializeBinaryTree;
 
 public class Main {
     public static void main(String[] args) {
 
-        MaximalRectangle method = new MaximalRectangle();
+        SerializeandDeserializeBinaryTree method = new SerializeandDeserializeBinaryTree();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -17,8 +17,8 @@ public class Main {
 //        for (InsertInterval.Interval i : method.insert(intervals, interval)){
 //            i.print();
 //        }
-        char[][] bars = {{'1','0','1','0','0'}};
-        method.maximalRectangle(bars);
-//        System.out.print(method.rotate(nums););
+        String str = "1,2,3,null,null,4,5";
+//        method.deserialize(str);
+        System.out.print(method.deserialize(str));
     }
 }
