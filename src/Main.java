@@ -1,9 +1,9 @@
-import questions.leetcode300.LongestIncreasingSubsequence;
+import questions.leetcode309.BestTimetoBuyandSellStockwithCooldown;
 
 public class Main {
     public static void main(String[] args) {
 
-        LongestIncreasingSubsequence method = new LongestIncreasingSubsequence();
+        BestTimetoBuyandSellStockwithCooldown method = new BestTimetoBuyandSellStockwithCooldown();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -17,9 +17,9 @@ public class Main {
 //        for (InsertInterval.Interval i : method.insert(intervals, interval)){
 //            i.print();
 //        }
-        int[] nums = {4,10,4,3,8,9};
+        int[] nums = {2,1};
 //        int[] nums = {10,9,2,5,3,7,101,18};
 //        method.deserialize(str);
-        System.out.print(method.lengthOfLIS(nums));
+        System.out.print(method.maxProfit(nums));
     }
 }
