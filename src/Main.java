@@ -1,9 +1,9 @@
-import questions.Leetcode312.BrustBalloons;
+import questions.leetcode322.CoinChange;
 
 public class Main {
     public static void main(String[] args) {
 
-        BrustBalloons method = new BrustBalloons();
+        CoinChange method = new CoinChange();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -17,9 +17,9 @@ public class Main {
 //        for (InsertInterval.Interval i : method.insert(intervals, interval)){
 //            i.print();
 //        }
-        int[] nums = {8,2,6,8,9,8,1,4,1,5,3,0,7,7,0,4,2,2};
+        int[] nums = {1,2,5};
 //        int[] nums = {10,9,2,5,3,7,101,18};
 //        method.deserialize(str);
-        System.out.print(method.maxCoins(nums));
+        System.out.print(method.coinCHangeIterative(nums, 11));
     }
 }
