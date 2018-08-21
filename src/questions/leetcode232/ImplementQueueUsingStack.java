@@ -6,7 +6,7 @@ public class ImplementQueueUsingStack {
     private Stack<Integer> s1;
     private Stack<Integer> s2;
     /** Initialize your data structure here. */
-    public MyQueue() {
+    public void MyQueue() {
         s1 = new Stack<>();
         s2 = new Stack<>();
     }
