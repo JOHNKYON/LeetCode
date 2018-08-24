@@ -1,9 +1,9 @@
-import questions.leetcode777.SwapAdjacentinLRString;
+import questions.leetcode811.SubdomainVisitCount;
 
 public class Main {
     public static void main(String[] args) {
 
-        SwapAdjacentinLRString method = new SwapAdjacentinLRString();
+        SubdomainVisitCount method = new SubdomainVisitCount();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -22,7 +22,7 @@ public class Main {
 //        int[][] queue = {{2,4},{3,4},{9,0},{0,6},{7,1},{6,0},{7,3},{2,5},{1,1},{8,0}};
 
 //        method.deserialize(str);
-        System.out.print(method.canTransform("XRXXXLXXXR",
-                "XXRLXXXRXX"));
+        String[] cp = {"9001 discuss.leetcode.com"};
+        System.out.print(method.subdomainVisits(cp));
     }
 }
