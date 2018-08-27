@@ -1,9 +1,9 @@
-import questions.leetcode811.SubdomainVisitCount;
+import questions.leetcode737.SentenceSimilarity2;
 
 public class Main {
     public static void main(String[] args) {
 
-        SubdomainVisitCount method = new SubdomainVisitCount();
+        SentenceSimilarity2 method = new SentenceSimilarity2();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -22,7 +22,9 @@ public class Main {
 //        int[][] queue = {{2,4},{3,4},{9,0},{0,6},{7,1},{6,0},{7,3},{2,5},{1,1},{8,0}};
 
 //        method.deserialize(str);
-        String[] cp = {"9001 discuss.leetcode.com"};
-        System.out.print(method.subdomainVisits(cp));
+        String[] words1 = {"a","very","delicious","meal"};
+        String[] words2 = {"one","really","delicious","dinner"};
+        String[][] pairs = {{"a","one"},{"dinner","meal"},{"super","meal"},{"really","very"},{"super","very"}};
+        System.out.print(method.areSentencesSimilarTwo(words1, words2, pairs));
     }
 }
