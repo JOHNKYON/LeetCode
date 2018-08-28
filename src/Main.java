@@ -1,10 +1,9 @@
-import questions.leetcode737.SentenceSimilarity2;
-import questions.leetcode745.PrefixAndSuffixSearch;
+import questions.leetcode681.NextClosestTime;
 
 public class Main {
     public static void main(String[] args) {
 
-        PrefixAndSuffixSearch method = new PrefixAndSuffixSearch();
+        NextClosestTime method = new NextClosestTime();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -27,6 +26,6 @@ public class Main {
 //        String[] words2 = {"one","really","delicious","dinner"};
 //        String[][] pairs = {{"a","one"},{"dinner","meal"},{"super","meal"},{"really","very"},{"super","very"}};
 //        System.out.print(method.areSentencesSimilarTwo(words1, words2, pairs));
-        String[] words = {"abbbababbb","baaabbabbb","abababbaaa","abbbbbbbba","bbbaabbbaa","ababbaabaa","baaaaabbbb","babbabbabb","ababaababb","bbabbababa"};
+        System.out.print(method.nextClosestTime("20:56"));
     }
 }
