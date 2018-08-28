@@ -1,9 +1,10 @@
 import questions.leetcode737.SentenceSimilarity2;
+import questions.leetcode745.PrefixAndSuffixSearch;
 
 public class Main {
     public static void main(String[] args) {
 
-        SentenceSimilarity2 method = new SentenceSimilarity2();
+        PrefixAndSuffixSearch method = new PrefixAndSuffixSearch();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -22,9 +23,10 @@ public class Main {
 //        int[][] queue = {{2,4},{3,4},{9,0},{0,6},{7,1},{6,0},{7,3},{2,5},{1,1},{8,0}};
 
 //        method.deserialize(str);
-        String[] words1 = {"a","very","delicious","meal"};
-        String[] words2 = {"one","really","delicious","dinner"};
-        String[][] pairs = {{"a","one"},{"dinner","meal"},{"super","meal"},{"really","very"},{"super","very"}};
-        System.out.print(method.areSentencesSimilarTwo(words1, words2, pairs));
+//        String[] words1 = {"a","very","delicious","meal"};
+//        String[] words2 = {"one","really","delicious","dinner"};
+//        String[][] pairs = {{"a","one"},{"dinner","meal"},{"super","meal"},{"really","very"},{"super","very"}};
+//        System.out.print(method.areSentencesSimilarTwo(words1, words2, pairs));
+        String[] words = {"abbbababbb","baaabbabbb","abababbaaa","abbbbbbbba","bbbaabbbaa","ababbaabaa","baaaaabbbb","babbabbabb","ababaababb","bbabbababa"};
     }
 }
