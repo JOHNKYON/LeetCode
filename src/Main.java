@@ -1,9 +1,9 @@
-import questions.leetcode399.EvaluateDivision;
+import questions.leetcode686.RepeatedStringMatch;
 
 public class Main {
     public static void main(String[] args) {
 
-        EvaluateDivision method = new EvaluateDivision();
+        RepeatedStringMatch method = new RepeatedStringMatch();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -28,6 +28,6 @@ public class Main {
 //        String[] words2 = {"one","really","delicious","dinner"};
 //        String[][] pairs = {{"a","one"},{"dinner","meal"},{"super","meal"},{"really","very"},{"super","very"}};
 //        System.out.print(method.areSentencesSimilarTwo(words1, words2, pairs));
-        method.calcEquation(eq, nums, ques);
+        System.out.print(method.repeatedStringMatch("a", "a"));
     }
 }
