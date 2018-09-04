@@ -1,9 +1,9 @@
-import questions.leetcode686.RepeatedStringMatch;
+import questions.leetcode316.RemoveDuplicateLetters;
 
 public class Main {
     public static void main(String[] args) {
 
-        RepeatedStringMatch method = new RepeatedStringMatch();
+        RemoveDuplicateLetters method = new RemoveDuplicateLetters();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -28,6 +28,6 @@ public class Main {
 //        String[] words2 = {"one","really","delicious","dinner"};
 //        String[][] pairs = {{"a","one"},{"dinner","meal"},{"super","meal"},{"really","very"},{"super","very"}};
 //        System.out.print(method.areSentencesSimilarTwo(words1, words2, pairs));
-        System.out.print(method.repeatedStringMatch("a", "a"));
+        System.out.print(method.removeDuplicateLetters("cbacdcbc"));
     }
 }
