@@ -1,9 +1,9 @@
-import questions.leetcode316.RemoveDuplicateLetters;
+import questions.leetcode388.LongestAbsoluteFilePath;
 
 public class Main {
     public static void main(String[] args) {
 
-        RemoveDuplicateLetters method = new RemoveDuplicateLetters();
+        LongestAbsoluteFilePath method = new LongestAbsoluteFilePath();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -28,6 +28,6 @@ public class Main {
 //        String[] words2 = {"one","really","delicious","dinner"};
 //        String[][] pairs = {{"a","one"},{"dinner","meal"},{"super","meal"},{"really","very"},{"super","very"}};
 //        System.out.print(method.areSentencesSimilarTwo(words1, words2, pairs));
-        System.out.print(method.removeDuplicateLetters("cbacdcbc"));
+        System.out.print(method.lengthLongestPath("a"));
     }
 }

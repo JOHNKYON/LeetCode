@@ -6,19 +6,19 @@ import java.util.Stack;
 
 public class FlattenNestedListIterator {
     Stack<NestedInteger> stack;
-    public NestedIterator(List<NestedInteger> nestedList) {
+    public FlattenNestedListIterator(List<NestedInteger> nestedList) {
         stack  = new Stack<>();
         for(int i = nestedList.size() - 1; i >= 0; i--) {
             stack.push(nestedList.get(i));
         }
     }
 
-    @Override
+//    @Override
     public Integer next() {
         return stack.pop().getInteger();
     }
 
-    @Override
+//    @Override
     public boolean hasNext() {
         while (!stack.isEmpty()) {
             NestedInteger curr = stack.peek();
