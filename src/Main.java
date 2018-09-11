@@ -1,10 +1,9 @@
-import questions.leetcode388.LongestAbsoluteFilePath;
-import questions.leetcode739.DailyTemperatures;
+import questions.leetcode340.LongestSubstringwithAtMostKDistinctCharacters;
 
 public class Main {
     public static void main(String[] args) {
 
-        DailyTemperatures method = new DailyTemperatures();
+        LongestSubstringwithAtMostKDistinctCharacters method = new LongestSubstringwithAtMostKDistinctCharacters();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -27,6 +26,7 @@ public class Main {
 //        String[] words2 = {"one","really","delicious","dinner"};
 //        String[][] pairs = {{"a","one"},{"dinner","meal"},{"super","meal"},{"really","very"},{"super","very"}};
 //        System.out.print(method.areSentencesSimilarTwo(words1, words2, pairs));
-        System.out.print(method.dailyTemperatures(input));
+        System.out.print(method.lengthOfLongestSubstringKDistinct("a@b$5!a8alskj234jasdf*()@$&%&#FJAvjjdaurNNMa8ASDF-0321jf?>{}L:fh",
+                10));
     }
 }
