@@ -1,9 +1,9 @@
-import questions.leetcode340.LongestSubstringwithAtMostKDistinctCharacters;
+import questions.leetcode163.MissingRanges;
 
 public class Main {
     public static void main(String[] args) {
 
-        LongestSubstringwithAtMostKDistinctCharacters method = new LongestSubstringwithAtMostKDistinctCharacters();
+        MissingRanges method = new MissingRanges();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -17,7 +17,7 @@ public class Main {
 //        for (InsertInterval.Interval i : method.insert(intervals, interval)){
 //            i.print();
 //        }
-        int[] input = {73,74,75,71,69,72,76,73};
+        int[] input = {0, 1, 3, 50, 75};
 //        int[][] queue = {{1,0},{2,0},{3,0},{4,0},{5,0},{6,0},{7,0}};
 //        int[][] queue = {{2,4},{3,4},{9,0},{0,6},{7,1},{6,0},{7,3},{2,5},{1,1},{8,0}};
 
@@ -26,7 +26,6 @@ public class Main {
 //        String[] words2 = {"one","really","delicious","dinner"};
 //        String[][] pairs = {{"a","one"},{"dinner","meal"},{"super","meal"},{"really","very"},{"super","very"}};
 //        System.out.print(method.areSentencesSimilarTwo(words1, words2, pairs));
-        System.out.print(method.lengthOfLongestSubstringKDistinct("a@b$5!a8alskj234jasdf*()@$&%&#FJAvjjdaurNNMa8ASDF-0321jf?>{}L:fh",
-                10));
+        System.out.print(method.findMissingRanges(input, 0, 99));
     }
 }
