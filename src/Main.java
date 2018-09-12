@@ -1,9 +1,10 @@
 import questions.leetcode163.MissingRanges;
+import questions.leetcode482.LicenseKeyFormatting;
 
 public class Main {
     public static void main(String[] args) {
 
-        MissingRanges method = new MissingRanges();
+        LicenseKeyFormatting method = new LicenseKeyFormatting();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -26,6 +27,6 @@ public class Main {
 //        String[] words2 = {"one","really","delicious","dinner"};
 //        String[][] pairs = {{"a","one"},{"dinner","meal"},{"super","meal"},{"really","very"},{"super","very"}};
 //        System.out.print(method.areSentencesSimilarTwo(words1, words2, pairs));
-        System.out.print(method.findMissingRanges(input, 0, 99));
+        System.out.print(method.licenseKeyFormatting("2-5g-3-J", 2));
     }
 }
