@@ -1,6 +1,9 @@
 import questions.leetcode163.MissingRanges;
 import questions.leetcode482.LicenseKeyFormatting;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -28,5 +31,8 @@ public class Main {
 //        String[][] pairs = {{"a","one"},{"dinner","meal"},{"super","meal"},{"really","very"},{"super","very"}};
 //        System.out.print(method.areSentencesSimilarTwo(words1, words2, pairs));
         System.out.print(method.licenseKeyFormatting("2-5g-3-J", 2));
+        Set<int[]> visited = new HashSet<>();
+        visited.add(new int[]{1,1});
+        System.out.print(visited.contains(new int[]{1,1}));
     }
 }
