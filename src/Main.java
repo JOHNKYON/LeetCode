@@ -1,14 +1,9 @@
-import questions.leetcode163.MissingRanges;
-import questions.leetcode403.FrogJump;
-import questions.leetcode482.LicenseKeyFormatting;
-
-import java.util.HashSet;
-import java.util.Set;
+import questions.leetcode803.BricksFallingWhenHit;
 
 public class Main {
     public static void main(String[] args) {
 
-        FrogJump method = new FrogJump();
+        BricksFallingWhenHit method = new BricksFallingWhenHit();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -22,7 +17,8 @@ public class Main {
 //        for (InsertInterval.Interval i : method.insert(intervals, interval)){
 //            i.print();
 //        }
-        int[] input = {0,1,3,4,5,7,9,10,12};
+        int[][] input = {{1,0,0,0}, {1,1,1,0}};
+        int[][] hits = {{1,0}};
 //        int[][] queue = {{1,0},{2,0},{3,0},{4,0},{5,0},{6,0},{7,0}};
 //        int[][] queue = {{2,4},{3,4},{9,0},{0,6},{7,1},{6,0},{7,3},{2,5},{1,1},{8,0}};
 
@@ -31,6 +27,6 @@ public class Main {
 //        String[] words2 = {"one","really","delicious","dinner"};
 //        String[][] pairs = {{"a","one"},{"dinner","meal"},{"super","meal"},{"really","very"},{"super","very"}};
 //        System.out.print(method.areSentencesSimilarTwo(words1, words2, pairs));
-        System.out.print(method.canCross(input));
+        System.out.print(method.hitBricks(input, hits));
     }
 }
