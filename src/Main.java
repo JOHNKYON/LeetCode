@@ -1,9 +1,9 @@
-import questions.leetcode803.BricksFallingWhenHit;
+import questions.leetcode844.BackspaceStringCompare;
 
 public class Main {
     public static void main(String[] args) {
 
-        BricksFallingWhenHit method = new BricksFallingWhenHit();
+        BackspaceStringCompare method = new BackspaceStringCompare();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -27,6 +27,7 @@ public class Main {
 //        String[] words2 = {"one","really","delicious","dinner"};
 //        String[][] pairs = {{"a","one"},{"dinner","meal"},{"super","meal"},{"really","very"},{"super","very"}};
 //        System.out.print(method.areSentencesSimilarTwo(words1, words2, pairs));
-        System.out.print(method.hitBricks(input, hits));
+        System.out.print(method.backspaceCompare("ab##",
+                "c#d#"));
     }
 }
