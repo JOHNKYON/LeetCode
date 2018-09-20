@@ -1,9 +1,9 @@
-import questions.leetcode465.OptimalAccountBalancing;
+import questions.leetcode774.MinimizeMaxDistancetoGasStation;
 
 public class Main {
     public static void main(String[] args) {
 
-        OptimalAccountBalancing method = new OptimalAccountBalancing();
+        MinimizeMaxDistancetoGasStation method = new MinimizeMaxDistancetoGasStation();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -17,7 +17,7 @@ public class Main {
 //        for (InsertInterval.Interval i : method.insert(intervals, interval)){
 //            i.print();
 //        }
-        int[][] input = {{10,11,6},{12,13,7},{14,15,2},{14,16,2},{14,17,2},{14,18,2}};
+        int[] input = {10,19,25,27,56,63,70,87,96,97};
         int[][] hits = {{1,0}};
 //        int[][] queue = {{1,0},{2,0},{3,0},{4,0},{5,0},{6,0},{7,0}};
 //        int[][] queue = {{2,4},{3,4},{9,0},{0,6},{7,1},{6,0},{7,3},{2,5},{1,1},{8,0}};
@@ -27,6 +27,6 @@ public class Main {
 //        String[] words2 = {"one","really","delicious","dinner"};
 //        String[][] pairs = {{"a","one"},{"dinner","meal"},{"super","meal"},{"really","very"},{"super","very"}};
 //        System.out.print(method.areSentencesSimilarTwo(words1, words2, pairs));
-        System.out.print(method.minTransfers(input));
+        System.out.print(method.minmaxGasDist(input, 3));
     }
 }
