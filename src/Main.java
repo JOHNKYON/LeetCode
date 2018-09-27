@@ -1,9 +1,10 @@
 import questions.leetcode135.Candy;
+import questions.leetcode486.PredicttheWinner;
 
 public class Main {
     public static void main(String[] args) {
 
-        Candy method= new Candy();
+        PredicttheWinner method= new PredicttheWinner();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -17,7 +18,7 @@ public class Main {
 //        for (InsertInterval.Interval i : method.insert(intervals, interval)){
 //            i.print();
 //        }
-        int[] input = {1,2,2};
+        int[] input = {1,5,2};
         int[][] hits = {{1,1,1}, {7,7,7}, {7,7,7}};
 //        int[][] queue = {{1,0},{2,0},{3,0},{4,0},{5,0},{6,0},{7,0}};
 //        int[][] queue = {{2,4},{3,4},{9,0},{0,6},{7,1},{6,0},{7,3},{2,5},{1,1},{8,0}};
@@ -27,6 +28,6 @@ public class Main {
 //        String[] words2 = {"one","really","delicious","dinner"};
 //        String[][] pairs = {{"a","one"},{"dinner","meal"},{"super","meal"},{"really","very"},{"super","very"}};
 //        System.out.print(method.areSentencesSimilarTwo(words1, words2, pairs));
-        System.out.print(method.candy(input));
+        System.out.print(method.PredictTheWinner(input));
     }
 }
