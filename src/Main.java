@@ -1,9 +1,9 @@
-import questions.leetcode679.Game24;
+import questions.leetcode723.CandyCrush;
 
 public class Main {
     public static void main(String[] args) {
 
-        Game24 method= new Game24();
+        CandyCrush method= new CandyCrush();
         //        List<InsertInterval.Interval> intervals = new ArrayList<InsertInterval.Interval>(){{
 ////            add(method.createInterval(6,9));
 //            add(method.createInterval(1,5));
@@ -27,6 +27,6 @@ public class Main {
 //        String[] words2 = {"one","really","delicious","dinner"};
 //        String[][] pairs = {{"a","one"},{"dinner","meal"},{"super","meal"},{"really","very"},{"super","very"}};
 //        System.out.print(method.areSentencesSimilarTwo(words1, words2, pairs));
-        System.out.print(method.judgePoint24(input));
+        System.out.print(method.candyCrush(hits));
     }
 }
