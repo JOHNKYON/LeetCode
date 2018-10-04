@@ -1,5 +1,4 @@
 import questions.leetcode346.MovingAverage;
-import questions.leetcode855.ExamRoom;
 
 public class Main {
     public static void main(String[] args) {
