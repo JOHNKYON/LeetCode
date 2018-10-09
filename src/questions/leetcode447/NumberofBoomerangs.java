@@ -1,42 +1,25 @@
 package questions.leetcode447;
 
-import java.util.Arrays;
+import java.util.HashMap;
 
 public class NumberofBoomerangs {
     public int numberOfBoomerangs(int[][] points) {
-        int n = points.length;
-        int res = 0;
-
-        double[][] distances = new double[n][n];
-        for (int i=0; i<n; i++) {
-            for (int j=0; j<n; j++) {
-                distances[i][j] = calDistance(points[i], points[j]);
-            }
-        }
-
-        for (double[] row: distances) {
-            Arrays.sort(row);
-            int count = 1;
-            for (int i=1; i<n; i++) {
-                if (equals(row[i], row[i-1]))
-                    count++;
-                else {
-                    res += count * (count-1);
-                    count = 1;
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int result = 0;
+        for (int[] point1 : points) {
+            for (int[] point2 : points) {
+                int distance = (point1[0] - point2[0]) * (point1[0] - point2[0]);
+                distance += (point1[1] - point2[1]) * (point1[1] - point2[1]);
+                Integer count = map.get(distance);
+                if (count != null) {
+                    result += 2 * count;
+                    map.put(distance, count + 1);
+                } else {
+                    map.put(distance, 1);
                 }
             }
+            map.clear();
         }
-
-        return res;
-    }
-
-    private double calDistance(int[] a, int[] b) {
-        double x = (double)a[0] - b[0];
-        double y = (double)a[1] - b[1];
-        return Math.sqrt(x*x + y*y);
-    }
-
-    private boolean equals(double a, double b) {
-        return (a - b < 1e-6) || (b-a < 1e-6);
+        return result;
     }
 }
