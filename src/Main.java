@@ -1,3 +1,4 @@
+import questions.leetcode115.DistinctSubsequences;
 import questions.leetcode524.LongestWordinDictionaryThroughDeleting;
 
 import java.util.ArrayList;
@@ -7,7 +8,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        LongestWordinDictionaryThroughDeleting method= new LongestWordinDictionaryThroughDeleting();
+        DistinctSubsequences method= new DistinctSubsequences();
 
         int[] input = {7,6,4,3,1};
         int[][] hits = {{1,0}, {0,0}, {2,0}};
@@ -20,7 +21,7 @@ public class Main {
             }
         };
 
-        System.out.print(method.findLongestWord("abc", d));
+        System.out.print(method.numDistinct("babgbag", "bag"));
 //        method.next(1);
 //        method.next(10);
 //        method.next(3);
