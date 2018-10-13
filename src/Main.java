@@ -1,5 +1,4 @@
-import questions.leetcode353.SnakeGame;
-import questions.leetcode835.ImageOverlap;
+import questions.leetcode188.BestTimeToBuyandSellStockIV;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,9 +8,9 @@ public class Main {
     public static void main(String[] args) {
         int[][] food = {{2,0},{0,0},{0,2},{2,2}};
 
-        ImageOverlap method= new ImageOverlap();
+        BestTimeToBuyandSellStockIV method= new BestTimeToBuyandSellStockIV();
 
-        int[] input = {7,6,4,3,1};
+        int[] input = {2,4,1};
         int[][] A = {{1,1,0},
         {0,1,0},
             {0,1,0}};
@@ -26,7 +25,7 @@ public class Main {
                 add("c");
             }
         };
-        System.out.print(method.largestOverlap(A, B));
+        System.out.print(method.maxProfit(2, input));
     }
 
 }
