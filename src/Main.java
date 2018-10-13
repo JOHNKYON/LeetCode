@@ -1,4 +1,5 @@
 import questions.leetcode353.SnakeGame;
+import questions.leetcode835.ImageOverlap;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,10 +9,15 @@ public class Main {
     public static void main(String[] args) {
         int[][] food = {{2,0},{0,0},{0,2},{2,2}};
 
-        SnakeGame method= new SnakeGame(3,3, food);
+        ImageOverlap method= new ImageOverlap();
 
         int[] input = {7,6,4,3,1};
-        int[][] hits = {{1,0}, {0,0}, {2,0}};
+        int[][] A = {{1,1,0},
+        {0,1,0},
+            {0,1,0}};
+        int[][] B = {{0,0,0},
+        {0,1,1},
+            {0,0,1}};
         String[] strs  = {"a","b","c"};
         List<String> d = new ArrayList<String>(){
             {
@@ -20,19 +26,7 @@ public class Main {
                 add("c");
             }
         };
-//        System.out.print(method.numDistinct("babgbag", "bag"));
-        method.move("D");
-        method.move("D");
-        method.move("R");
-        method.move("U");
-        method.move("U");
-        method.move("L");
-        method.move("D");
-        method.move("R");
-        method.move("R");
-        method.move("U");
-        method.move("L");
-        method.move("D");
+        System.out.print(method.largestOverlap(A, B));
     }
 
 }
