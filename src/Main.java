@@ -1,5 +1,5 @@
 
-import questions.leetcode132.PalindromePartitioningII;
+import questions.leetcode407.TrappingRainWaterII;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,12 +10,10 @@ public class Main {
     public static void main(String[] args) throws IOException {
         int[][] food = {{2,0},{0,0},{0,2},{2,2}};
 
-        PalindromePartitioningII method= new PalindromePartitioningII();
+        TrappingRainWaterII method= new TrappingRainWaterII();
 
         int[] input = {1,2,3,3,4,5};
-        int[][] A = {{1,1,0},
-        {0,1,0},
-            {0,1,0}};
+        int[][] A = {{12,13,1,12},{13,4,13,12},{13,8,10,12},{12,13,12,12},{13,13,13,13}};
         int[][] B = {{0,0,0},
         {0,1,1},
             {0,0,1}};
@@ -27,7 +25,7 @@ public class Main {
                 add("c");
             }
         };
-        System.out.print(method.minCut("aab"));
+        System.out.print(method.trapRainWater(A));
     }
 
 }
