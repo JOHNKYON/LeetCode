@@ -1,6 +1,6 @@
 
-import questions.leetcode247.StrobogrammaticNumberII;
-import questions.leetcode407.TrappingRainWaterII;
+
+import questions.leetcode377.CombinationSumIV;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,9 +11,9 @@ public class Main {
     public static void main(String[] args) throws IOException {
         int[][] food = {{2,0},{0,0},{0,2},{2,2}};
 
-        StrobogrammaticNumberII method= new StrobogrammaticNumberII();
+        CombinationSumIV method= new CombinationSumIV();
 
-        int[] input = {1,2,3,3,4,5};
+        int[] input = {5,1,8};
         int[][] A = {{12,13,1,12},{13,4,13,12},{13,8,10,12},{12,13,12,12},{13,13,13,13}};
         int[][] B = {{0,0,0},
         {0,1,1},
@@ -26,7 +26,7 @@ public class Main {
                 add("c");
             }
         };
-        System.out.print(method.findStrobogrammatic(3));
+        System.out.print(method.combinationSum4(input,24));
     }
 
 }
