@@ -1,6 +1,4 @@
-
-
-import questions.leetcode377.CombinationSumIV;
+import questions.leetcode930.BinarySubarraysWithSum;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,14 +9,14 @@ public class Main {
     public static void main(String[] args) throws IOException {
         int[][] food = {{2,0},{0,0},{0,2},{2,2}};
 
-        CombinationSumIV method= new CombinationSumIV();
+        BinarySubarraysWithSum method= new BinarySubarraysWithSum();
 
-        int[] input = {5,1,8};
+        int[] input = {0,0,0,0,0};
         int[][] A = {{12,13,1,12},{13,4,13,12},{13,8,10,12},{12,13,12,12},{13,13,13,13}};
         int[][] B = {{0,0,0},
         {0,1,1},
             {0,0,1}};
-        String[] strs  = {"hello", "hi", "helo"};
+        String[] strs  = {"test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"};
         List<String> d = new ArrayList<String>(){
             {
                 add("a");
@@ -26,7 +24,7 @@ public class Main {
                 add("c");
             }
         };
-        System.out.print(method.combinationSum4(input,24));
+        System.out.print(method.numSubarraysWithSum(input,0));
     }
 
 }
