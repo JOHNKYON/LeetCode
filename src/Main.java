@@ -1,4 +1,4 @@
-import questions.leetcode930.BinarySubarraysWithSum;
+import questions.leetcode727.MinimumWindowSubsequence;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         int[][] food = {{2,0},{0,0},{0,2},{2,2}};
 
-        BinarySubarraysWithSum method= new BinarySubarraysWithSum();
+        MinimumWindowSubsequence method= new MinimumWindowSubsequence();
 
         int[] input = {0,0,0,0,0};
         int[][] A = {{12,13,1,12},{13,4,13,12},{13,8,10,12},{12,13,12,12},{13,13,13,13}};
@@ -24,7 +24,8 @@ public class Main {
                 add("c");
             }
         };
-        System.out.print(method.numSubarraysWithSum(input,0));
+        System.out.print(method.minWindow("abcddbdde",
+                "bde"));
     }
 
 }
