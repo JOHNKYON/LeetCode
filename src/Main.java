@@ -1,5 +1,4 @@
-import questions.leetcode317.ShortestDistanceFromAllBuildings;
-import questions.leetcode712.MinumumASCIIDeleteSumForTwoStrings;
+import questions.leetcode714.BestTimetoBuyandSellStockwithTransactionFee;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,9 +9,9 @@ public class Main {
     public static void main(String[] args) throws IOException {
         int[][] food = {{2,0},{0,0},{0,2},{2,2}};
 
-        MinumumASCIIDeleteSumForTwoStrings method= new MinumumASCIIDeleteSumForTwoStrings();
+        BestTimetoBuyandSellStockwithTransactionFee method= new BestTimetoBuyandSellStockwithTransactionFee();
 
-        int[] input = {2,3,8,9,27};
+        int[] input = {1, 3, 2, 8, 4, 9};
         int[][] A = {{1,1,1,1,1,0},{0,0,0,0,0,1},{0,1,1,0,0,1},{1,0,0,1,0,1},{1,0,1,0,0,1},{1,0,0,0,0,1},{0,1,1,1,1,0}};
         int[][] B = {{0,0,0},
         {0,1,1},
@@ -25,7 +24,7 @@ public class Main {
                 add("c");
             }
         };
-        System.out.print(method.minimumDeleteSum("sea", "eat"));
+        System.out.print(method.maxProfit(input, 2));
     }
 
 }
