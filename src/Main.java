@@ -1,5 +1,4 @@
-import questions.leetcode368.LargestDivisibleSubset;
-import questions.leetcode727.MinimumWindowSubsequence;
+import questions.leetcode317.ShortestDistanceFromAllBuildings;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,10 +9,10 @@ public class Main {
     public static void main(String[] args) throws IOException {
         int[][] food = {{2,0},{0,0},{0,2},{2,2}};
 
-        LargestDivisibleSubset method= new LargestDivisibleSubset();
+        ShortestDistanceFromAllBuildings method= new ShortestDistanceFromAllBuildings();
 
         int[] input = {2,3,8,9,27};
-        int[][] A = {{12,13,1,12},{13,4,13,12},{13,8,10,12},{12,13,12,12},{13,13,13,13}};
+        int[][] A = {{1,1,1,1,1,0},{0,0,0,0,0,1},{0,1,1,0,0,1},{1,0,0,1,0,1},{1,0,1,0,0,1},{1,0,0,0,0,1},{0,1,1,1,1,0}};
         int[][] B = {{0,0,0},
         {0,1,1},
             {0,0,1}};
@@ -25,7 +24,7 @@ public class Main {
                 add("c");
             }
         };
-        System.out.print(method.largestDivisibleSubset(input));
+        System.out.print(method.shortestDistance(A));
     }
 
 }
