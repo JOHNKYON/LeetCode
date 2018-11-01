@@ -1,5 +1,4 @@
-import questions.leetcode271.EncodeAndDecodeStrings;
-import questions.leetcode714.BestTimetoBuyandSellStockwithTransactionFee;
+import questions.leetcode256.PaintHouse;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -8,9 +7,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        int[][] food = {{2,0},{0,0},{0,2},{2,2}};
+        int[][] food = {{17, 2, 17},{16,16,5},{14,3,19}};
 
-        EncodeAndDecodeStrings method= new EncodeAndDecodeStrings();
+        PaintHouse method= new PaintHouse();
 
         int[] input = {1, 3, 2, 8, 4, 9};
         int[][] A = {{1,1,1,1,1,0},{0,0,0,0,0,1},{0,1,1,0,0,1},{1,0,0,1,0,1},{1,0,1,0,0,1},{1,0,0,0,0,1},{0,1,1,1,1,0}};
@@ -25,7 +24,7 @@ public class Main {
 //                add("c");
             }
         };
-        System.out.print(method.decode(method.encode(d)));
+        System.out.print(method.minCost(food));
     }
 
 }
