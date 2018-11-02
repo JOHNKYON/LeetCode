@@ -1,4 +1,4 @@
-package questions.Leetcode312;
+package questions.leetcode312;
 
 public class BrustBalloons {
     public int maxCoins(int[] nums) {
