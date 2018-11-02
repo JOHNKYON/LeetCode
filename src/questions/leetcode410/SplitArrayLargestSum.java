@@ -28,4 +28,36 @@ public class SplitArrayLargestSum {
         }
         return dp[n][m];
     }
+
+    public int splitArray2(int[] nums, int m) {
+        long l = 0;
+        long r = 0;
+        int n = nums.length;
+        for (int num: nums)
+            r += num;
+        long res = r;
+        while (l < r) {
+            long sum = 0;
+            int count = 1;
+            long mid = (l + r) >> 1;
+            for (int i=0; i<n; i++) {
+                if (sum + nums[i] > mid) {
+                    count++;
+                    sum = nums[i];
+
+                    if (count > m) {
+                        l = mid+1;
+                        break;
+                    }
+                } else
+                    sum += nums[i];
+            }
+            if (count <= m) {
+                res = Math.min(res, mid);
+                r = mid;
+            }
+        }
+
+        return (int)res;
+    }
 }

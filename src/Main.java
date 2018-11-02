@@ -12,7 +12,7 @@ public class Main {
 
         SplitArrayLargestSum method= new SplitArrayLargestSum();
 
-        int[] input = {7,2,5,10,8};
+        int[] input = {1,2,3,4,5};
         int[][] A = {{1,1,1,1,1,0},{0,0,0,0,0,1},{0,1,1,0,0,1},{1,0,0,1,0,1},{1,0,1,0,0,1},{1,0,0,0,0,1},{0,1,1,1,1,0}};
         int[][] B = {{0,0,0},
         {0,1,1},
@@ -25,7 +25,7 @@ public class Main {
 //                add("c");
             }
         };
-        System.out.print(method.splitArray(input, 2));
+        System.out.print(method.splitArray2(input, 2));
     }
 
 }
