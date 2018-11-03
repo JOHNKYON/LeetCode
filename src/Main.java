@@ -1,5 +1,6 @@
 import questions.dataStructure.TreeNode;
 import questions.leetcode222.CountCompleteTreeNodes;
+import questions.leetcode265.PaintHouseII;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,10 +11,10 @@ public class Main {
     public static void main(String[] args) throws IOException {
         int[][] food = {{17, 2, 17},{16,16,5},{14,3,19}};
 
-        CountCompleteTreeNodes method= new CountCompleteTreeNodes();
+        PaintHouseII method= new PaintHouseII();
 
         int[] input = {1, 3, 2, 8, 4, 9};
-        int[][] A = {{1,1,1,1,1,0},{0,0,0,0,0,1},{0,1,1,0,0,1},{1,0,0,1,0,1},{1,0,1,0,0,1},{1,0,0,0,0,1},{0,1,1,1,1,0}};
+        int[][] A = {{1,3}};
         int[][] B = {{0,0,0},
         {0,1,1},
             {0,0,1}};
@@ -27,7 +28,7 @@ public class Main {
 //                add("c");
             }
         };
-        System.out.print(method.countNodes(root));
+        System.out.print(method.minCostII(A));
     }
 
 }
