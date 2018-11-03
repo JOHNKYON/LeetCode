@@ -1,4 +1,5 @@
 import questions.dataStructure.TreeNode;
+import questions.leetcode276.PaintFence;
 import questions.leetcode376.WiggleSubsequence;
 
 import java.io.IOException;
@@ -10,7 +11,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         int[][] food = {{17, 2, 17},{16,16,5},{14,3,19}};
 
-        WiggleSubsequence method= new WiggleSubsequence();
+        PaintFence method= new PaintFence();
 
         int[] input = {1,1};
         int[][] A = {{1,3}};
@@ -27,7 +28,7 @@ public class Main {
 //                add("c");
             }
         };
-        System.out.print(method.wiggleMaxLength(input));
+        System.out.print(method.numWays(3, 3));
     }
 
 }
