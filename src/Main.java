@@ -1,6 +1,5 @@
 import questions.dataStructure.TreeNode;
-import questions.leetcode222.CountCompleteTreeNodes;
-import questions.leetcode265.PaintHouseII;
+import questions.leetcode376.WiggleSubsequence;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,9 +10,9 @@ public class Main {
     public static void main(String[] args) throws IOException {
         int[][] food = {{17, 2, 17},{16,16,5},{14,3,19}};
 
-        PaintHouseII method= new PaintHouseII();
+        WiggleSubsequence method= new WiggleSubsequence();
 
-        int[] input = {1, 3, 2, 8, 4, 9};
+        int[] input = {1,1};
         int[][] A = {{1,3}};
         int[][] B = {{0,0,0},
         {0,1,1},
@@ -28,7 +27,7 @@ public class Main {
 //                add("c");
             }
         };
-        System.out.print(method.minCostII(A));
+        System.out.print(method.wiggleMaxLength(input));
     }
 
 }
