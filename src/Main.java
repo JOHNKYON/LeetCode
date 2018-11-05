@@ -1,6 +1,7 @@
 import questions.dataStructure.TreeNode;
 import questions.leetcode276.PaintFence;
 import questions.leetcode376.WiggleSubsequence;
+import questions.leetcode813.LargestSumOfAverages;
 
 
 import java.io.IOException;
@@ -12,9 +13,9 @@ public class Main {
     public static void main(String[] args) throws IOException {
         int[][] food = {{17, 2, 17},{16,16,5},{14,3,19}};
 
-        PaintFence method= new PaintFence();
+        LargestSumOfAverages method= new LargestSumOfAverages();
 
-        int[] input = {1,1};
+        int[] input = {1,2,3,4,5,6,7};
         int[][] A = {{1,3}};
         int[][] B = {{0,0,0},
         {0,1,1},
@@ -29,7 +30,7 @@ public class Main {
 //                add("c");
             }
         };
-        System.out.print(method.numWays(3, 3));
+        System.out.print(method.largestSumOfAverages(input, 4));
     }
 
 }
