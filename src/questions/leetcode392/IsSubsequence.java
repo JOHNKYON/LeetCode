@@ -17,4 +17,15 @@ public class IsSubsequence {
         }
         return false;
     }
+
+    public boolean isSubsequence2(String s, String t) {
+        int idx = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char cur = s.charAt(i);
+            int next = t.indexOf(cur, idx);
+            if (next == -1) return false;
+            idx = next + 1;
+        }
+        return true;
+    }
 }
