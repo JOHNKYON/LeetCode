@@ -1,6 +1,5 @@
 import questions.dataStructure.TreeNode;
-import questions.leetcode276.PaintFence;
-import questions.leetcode376.WiggleSubsequence;
+import questions.leetcode638.ShoppingOffers;
 import questions.leetcode813.LargestSumOfAverages;
 
 
@@ -13,7 +12,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         int[][] food = {{17, 2, 17},{16,16,5},{14,3,19}};
 
-        LargestSumOfAverages method= new LargestSumOfAverages();
+        ShoppingOffers method= new ShoppingOffers();
 
         int[] input = {1,2,3,4,5,6,7};
         int[][] A = {{1,3}};
@@ -23,14 +22,36 @@ public class Main {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         String[] strs  = {"test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"};
-        List<String> d = new ArrayList<String>(){
+        List<Integer> a = new ArrayList<Integer>(){
             {
-//                add("a");
-//                add("b");
-//                add("c");
+                add(2);
+                add(5);
             }
         };
-        System.out.print(method.largestSumOfAverages(input, 4));
+        List<Integer> b = new ArrayList<Integer>(){
+            {
+                add(3);
+                add(2);
+            }
+        };
+        List<Integer> c = new ArrayList<Integer>(){
+            {
+                add(3);
+                add(0);
+                add(5);
+            }
+        };
+        List<Integer> d = new ArrayList<Integer>(){
+            {
+                add(1);
+                add(2);
+                add(10);
+            }
+        };
+        List<List<Integer>> special = new ArrayList<>();
+        special.add(c);
+        special.add(d);
+        System.out.print(method.shoppingOffers(a, special, b));
     }
 
 }
