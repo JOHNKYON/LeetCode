@@ -1,4 +1,5 @@
 import questions.dataStructure.TreeNode;
+import questions.leetcode329.LongestIncreasingPathInAMatrix;
 import questions.leetcode474.OnesAndZeros;
 import questions.leetcode638.ShoppingOffers;
 import questions.leetcode813.LargestSumOfAverages;
@@ -11,9 +12,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        int[][] food = {{17, 2, 17},{16,16,5},{14,3,19}};
+        int[][] food = {{9,9,4},{6,6,8},{2,1,1}};
 
-        OnesAndZeros method= new OnesAndZeros();
+        LongestIncreasingPathInAMatrix method= new LongestIncreasingPathInAMatrix();
 
         int[] input = {1,2,3,4,5,6,7};
         int[][] A = {{1,3}};
@@ -52,7 +53,7 @@ public class Main {
         List<List<Integer>> special = new ArrayList<>();
         special.add(c);
         special.add(d);
-        System.out.print(method.findMaxForm(strs, 1, 1));
+        System.out.print(method.longestIncreasingPath(food));
     }
 
 }
