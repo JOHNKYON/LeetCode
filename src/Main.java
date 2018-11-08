@@ -1,5 +1,6 @@
 import questions.dataStructure.TreeNode;
 import questions.leetcode673.NumberOfLongestIncreasingSubsequence;
+import questions.leetcode887.SuperEggDrop;
 import questions.leetcode911.OnlineElection;
 
 
@@ -14,7 +15,7 @@ public class Main {
 
         int[][] A = {{0,1,0,1,1}, {24,29,31,76,81}};
 
-        OnlineElection method= new OnlineElection(A[0], A[1]);
+        SuperEggDrop method= new SuperEggDrop();
 
         int[] input = {1,3,5,4,7};
         int[][] B = {{0,0,0},
@@ -52,10 +53,8 @@ public class Main {
         List<List<Integer>> special = new ArrayList<>();
         special.add(c);
         special.add(d);
-        System.out.print(method.q(28));
-        System.out.print(method.q(24));
-        System.out.print(method.q(29));
-        System.out.print(method.q(77));
+        System.out.print(method.superEggDrop(2, 6));
+
     }
 
 }
