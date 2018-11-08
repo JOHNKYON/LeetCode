@@ -1,9 +1,6 @@
 import questions.dataStructure.TreeNode;
-import questions.leetcode329.LongestIncreasingPathInAMatrix;
-import questions.leetcode474.OnesAndZeros;
-import questions.leetcode638.ShoppingOffers;
 import questions.leetcode673.NumberOfLongestIncreasingSubsequence;
-import questions.leetcode813.LargestSumOfAverages;
+import questions.leetcode911.OnlineElection;
 
 
 import java.io.IOException;
@@ -15,10 +12,11 @@ public class Main {
     public static void main(String[] args) throws IOException {
         int[][] food = {{9,9,4},{6,6,8},{2,1,1}};
 
-        NumberOfLongestIncreasingSubsequence method= new NumberOfLongestIncreasingSubsequence();
+        int[][] A = {{0,1,0,1,1}, {24,29,31,76,81}};
+
+        OnlineElection method= new OnlineElection(A[0], A[1]);
 
         int[] input = {1,3,5,4,7};
-        int[][] A = {{1,3}};
         int[][] B = {{0,0,0},
         {0,1,1},
             {0,0,1}};
@@ -54,7 +52,10 @@ public class Main {
         List<List<Integer>> special = new ArrayList<>();
         special.add(c);
         special.add(d);
-        System.out.print(method.findNumberOfLIS(input));
+        System.out.print(method.q(28));
+        System.out.print(method.q(24));
+        System.out.print(method.q(29));
+        System.out.print(method.q(77));
     }
 
 }
