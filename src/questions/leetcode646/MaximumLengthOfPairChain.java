@@ -22,4 +22,20 @@ public class MaximumLengthOfPairChain {
 
         return res+1;
     }
+
+    public int findLongestChain2(int[][] pairs) {
+        if (pairs == null || pairs.length == 0)
+            return 0;
+
+        Arrays.sort(pairs, (a, b) -> a[1]-b[1]);
+        int curr = Integer.MIN_VALUE, ans = 0;
+        for (int[] pair: pairs) {
+            if (curr < pair[0]) {
+                curr = pair[1];
+                ans++;
+            }
+        }
+
+        return ans;
+    }
 }
