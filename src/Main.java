@@ -1,8 +1,5 @@
 import questions.dataStructure.TreeNode;
-import questions.leetcode646.MaximumLengthOfPairChain;
-import questions.leetcode673.NumberOfLongestIncreasingSubsequence;
-import questions.leetcode887.SuperEggDrop;
-import questions.leetcode911.OnlineElection;
+import questions.leetcode466.CountTheRepititions;
 
 
 import java.io.IOException;
@@ -16,7 +13,7 @@ public class Main {
 
         int[][] A = {{9,10},{9,10},{4,5},{-9,-3},{-9,1},{0,3},{6,10},{-5,-4},{-7,-6}};
 
-        MaximumLengthOfPairChain method= new MaximumLengthOfPairChain();
+        CountTheRepititions method= new CountTheRepititions();
 
         int[] input = {1,3,5,4,7};
         int[][] B = {{0,0,0},
@@ -54,7 +51,7 @@ public class Main {
         List<List<Integer>> special = new ArrayList<>();
         special.add(c);
         special.add(d);
-        System.out.print(method.findLongestChain(A));
+        System.out.print(method.getMaxRepetitions("aaa", 3, "aa", 1));
 
     }
 
