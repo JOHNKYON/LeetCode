@@ -1,4 +1,5 @@
 import questions.dataStructure.TreeNode;
+import questions.leetcode646.MaximumLengthOfPairChain;
 import questions.leetcode673.NumberOfLongestIncreasingSubsequence;
 import questions.leetcode887.SuperEggDrop;
 import questions.leetcode911.OnlineElection;
@@ -13,9 +14,9 @@ public class Main {
     public static void main(String[] args) throws IOException {
         int[][] food = {{9,9,4},{6,6,8},{2,1,1}};
 
-        int[][] A = {{0,1,0,1,1}, {24,29,31,76,81}};
+        int[][] A = {{9,10},{9,10},{4,5},{-9,-3},{-9,1},{0,3},{6,10},{-5,-4},{-7,-6}};
 
-        SuperEggDrop method= new SuperEggDrop();
+        MaximumLengthOfPairChain method= new MaximumLengthOfPairChain();
 
         int[] input = {1,3,5,4,7};
         int[][] B = {{0,0,0},
@@ -53,7 +54,7 @@ public class Main {
         List<List<Integer>> special = new ArrayList<>();
         special.add(c);
         special.add(d);
-        System.out.print(method.superEggDrop(2, 6));
+        System.out.print(method.findLongestChain(A));
 
     }
 
