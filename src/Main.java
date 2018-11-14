@@ -1,5 +1,6 @@
 import questions.dataStructure.TreeNode;
 import questions.leetcode351.AndroidUnlockPatterns;
+import questions.leetcode688.KnightProbabilityInCheeseboard;
 import questions.leetcode800.SimilarRGBColor;
 
 
@@ -14,7 +15,7 @@ public class Main {
 
         int[][] A = {{9,10},{9,10},{4,5},{-9,-3},{-9,1},{0,3},{6,10},{-5,-4},{-7,-6}};
 
-        AndroidUnlockPatterns method= new AndroidUnlockPatterns();
+        KnightProbabilityInCheeseboard method= new KnightProbabilityInCheeseboard();
 
         int[] input = {1,3,5,4,7};
         int[][] B = {{0,0,0},
@@ -52,7 +53,7 @@ public class Main {
         List<List<Integer>> special = new ArrayList<>();
         special.add(c);
         special.add(d);
-        System.out.print(method.numberOfPatterns(1,1));
+        System.out.print(method.knightProbability(3,2, 0, 0));
 
     }
 
