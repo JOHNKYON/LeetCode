@@ -1,4 +1,5 @@
 import questions.dataStructure.TreeNode;
+import questions.leetcode446.ArithmeticSlicesIISubsequence;
 import questions.leetcode68.TextJustification;
 
 
@@ -13,9 +14,9 @@ public class Main {
 
         int[][] A = {{9,10},{9,10},{4,5},{-9,-3},{-9,1},{0,3},{6,10},{-5,-4},{-7,-6}};
 
-        TextJustification method= new TextJustification();
+        ArithmeticSlicesIISubsequence method= new ArithmeticSlicesIISubsequence();
 
-        int[] input = {1,3,5,4,7};
+        int[] input = {-2147483648,0,-2147483648};
         int[][] B = {{0,0,0},
         {0,1,1},
             {0,0,1}};
@@ -51,7 +52,7 @@ public class Main {
         List<List<Integer>> special = new ArrayList<>();
         special.add(c);
         special.add(d);
-        System.out.print(method.fullJustify(strs, 16));
+        System.out.print(method.numberOfArithmeticSlices(input));
 
     }
 
