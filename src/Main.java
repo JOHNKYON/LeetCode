@@ -1,6 +1,5 @@
 import questions.dataStructure.TreeNode;
-import questions.leetcode446.ArithmeticSlicesIISubsequence;
-import questions.leetcode68.TextJustification;
+import questions.leetcode472.ConcatenatedWords;
 
 
 import java.io.IOException;
@@ -14,7 +13,7 @@ public class Main {
 
         int[][] A = {{9,10},{9,10},{4,5},{-9,-3},{-9,1},{0,3},{6,10},{-5,-4},{-7,-6}};
 
-        ArithmeticSlicesIISubsequence method= new ArithmeticSlicesIISubsequence();
+        ConcatenatedWords method= new ConcatenatedWords();
 
         int[] input = {-2147483648,0,-2147483648};
         int[][] B = {{0,0,0},
@@ -22,7 +21,7 @@ public class Main {
             {0,0,1}};
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
-        String[] strs  = {"ask","not","what","your","country","can","do","for","you","ask","what","you","can","do","for","your","country"};
+        String[] strs  = {"cat","cats","catsdogcats","dog","dogcatsdog","hippopotamuses","rat","ratcatdogcat"};
         List<Integer> a = new ArrayList<Integer>(){
             {
                 add(2);
@@ -52,7 +51,7 @@ public class Main {
         List<List<Integer>> special = new ArrayList<>();
         special.add(c);
         special.add(d);
-        System.out.print(method.numberOfArithmeticSlices(input));
+        System.out.print(method.findAllConcatenatedWordsInADict(strs));
 
     }
 
