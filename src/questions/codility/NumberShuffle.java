@@ -14,7 +14,7 @@ public class NumberShuffle {
             i++;
             j--;
         }
-        // When length of A is odd.
+        // When length of BigButtons is odd.
         if (i == j){chararr[i*2] = A_str.charAt(i);}
 
         // Parse

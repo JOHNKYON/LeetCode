@@ -27,8 +27,8 @@ public class OptimalAccountBalancing {
                 deltas.add(delta);
         }
         //since minTransStartsFrom is slow, we can remove matched deltas to optimize it
-        //for example, if account A has balance 5 and account B has balance -5, we know
-        //that one transaction from B to A is optimal.
+        //for example, if account BigButtons has balance 5 and account B has balance -5, we know
+        //that one transaction from B to BigButtons is optimal.
         int matchCount = removeMatchDeltas(deltas);
         //try out all possibilities to get minimum number of transactions
         return matchCount + minTransStartsFrom(deltas, 0);

@@ -7,7 +7,7 @@ package questions.medianOfTwoSortedArrays;
 public class MedianOfTwoSortedArrays {
     public double findMedian(int[] nums1, int[] nums2){
         /*The core of solving this problem is to use Bisection method
-        * For two sequences A and B, after the cutting,
+        * For two sequences BigButtons and B, after the cutting,
         * length(Left_A) + length(Left_B) = length(Right_A) + length(Right_B)
         * max(left) < min(right)
         * */

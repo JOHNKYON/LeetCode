@@ -1,4 +1,6 @@
+import questions.codejam.roundH2018.BigButtons;
 import questions.dataStructure.TreeNode;
+import questions.leetcode127.WordLadder;
 import questions.leetcode467.UniqueSubstringsInWraparoudString;
 
 
@@ -13,7 +15,7 @@ public class Main {
 
         int[][] A = {{9,10},{9,10},{4,5},{-9,-3},{-9,1},{0,3},{6,10},{-5,-4},{-7,-6}};
 
-        UniqueSubstringsInWraparoudString method= new UniqueSubstringsInWraparoudString();
+        WordLadder method= new WordLadder();
 
         int[] input = {-2147483648,0,-2147483648};
         int[][] B = {{0,0,0},
@@ -21,7 +23,10 @@ public class Main {
             {0,0,1}};
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
-        String[] strs  = {"cat","cats","catsdogcats","dog","dogcatsdog","hippopotamuses","rat","ratcatdogcat"};
+        String[] strs  = {"hot","dot","dog","lot","log","cog"};
+        List<String> dict = new ArrayList<>();
+        for (String str: strs)
+            dict.add(str);
         List<Integer> a = new ArrayList<Integer>(){
             {
                 add(2);
@@ -51,8 +56,7 @@ public class Main {
         List<List<Integer>> special = new ArrayList<>();
         special.add(c);
         special.add(d);
-        System.out.print(method.findSubstringInWraproundString("zaba"));
-
+        System.out.print(method.ladderLength("hit", "cog", dict));
     }
 
 }

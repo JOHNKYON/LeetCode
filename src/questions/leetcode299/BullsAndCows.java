@@ -23,7 +23,7 @@ public class BullsAndCows {
         cows -= bulls;
         StringBuilder sb = new StringBuilder();
         sb.append(bulls);
-        sb.append("A");
+        sb.append("BigButtons");
         sb.append(cows);
         sb.append("B");
         return sb.toString();
