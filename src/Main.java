@@ -1,8 +1,5 @@
-import questions.codejam.roundH2018.BigButtons;
 import questions.dataStructure.TreeNode;
-import questions.leetcode127.WordLadder;
-import questions.leetcode467.UniqueSubstringsInWraparoudString;
-import questions.leetcode523.ContinuousSubarraySum;
+import questions.leetcode769.MaxChunksToMakeSorted;
 
 
 import java.io.IOException;
@@ -16,9 +13,9 @@ public class Main {
 
         int[][] A = {{9,10},{9,10},{4,5},{-9,-3},{-9,1},{0,3},{6,10},{-5,-4},{-7,-6}};
 
-        ContinuousSubarraySum method= new ContinuousSubarraySum();
+        MaxChunksToMakeSorted method= new MaxChunksToMakeSorted();
 
-        int[] input = {5,2,4};
+        int[] input = {1,0,2,3,4};
         int[][] B = {{0,0,0},
         {0,1,1},
             {0,0,1}};
@@ -57,7 +54,7 @@ public class Main {
         List<List<Integer>> special = new ArrayList<>();
         special.add(c);
         special.add(d);
-        System.out.print(method.checkSubarraySum(input, 5));
+        System.out.print(method.maxChunksToSorted(input));
     }
 
 }
