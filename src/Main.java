@@ -1,4 +1,5 @@
 import questions.dataStructure.TreeNode;
+import questions.leetcode324.WiggleSortII;
 import questions.leetcode348.DesignTicTacToe;
 
 
@@ -12,9 +13,9 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        DesignTicTacToe method= new DesignTicTacToe(3);
+        WiggleSortII method= new WiggleSortII();
 
-        int[] input = {0,0,1};
+        int[] input = {1, 5, 1, 1, 6, 4};
         int[][] B = {{0,0,0},
         {0,1,1},
             {0,0,1}};
@@ -53,7 +54,8 @@ public class Main {
         List<List<Integer>> special = new ArrayList<>();
         special.add(c);
         special.add(d);
-        System.out.print(method.move(0,0,1));
+        System.out.print(" ");
+        method.wiggleSort(input);
     }
 
 }
