@@ -1,40 +1,38 @@
 package questions.leetcode497;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class RandomPointinNonoverlappingRectangles {
-    int[][] rectangles;
-    int[] spaces;
-    int space_sum;
-    Random random;
+    int[][] rects;
+    List<Integer> psum = new ArrayList<>();
+    int tot = 0;
+    Random rand = new Random();
 
     public RandomPointinNonoverlappingRectangles(int[][] rects) {
-        int n = rects.length;
-        space_sum = 0;
-        random = new Random();
-        rectangles = new int[n][4];
-        spaces = new int[n];
-        for (int i=0; i<n; i++) {
-            rectangles[i] = rects[i];
-            spaces[i] = (rects[i][3] - rects[i][1]) * (rects[i][2] - rects[i][0]);
-            space_sum += spaces[i];
+        this.rects = rects;
+        for (int[] x : rects){
+            tot += (x[2] - x[0] + 1) * (x[3] - x[1] + 1);
+            psum.add(tot);
         }
     }
 
     public int[] pick() {
-        int[] res = new int[2];
-        if (spaces.length == 0)
-            return res;
-        int seed = random.nextInt(space_sum);
-        int i = 0;
-        int curr = spaces[0];
-        while (curr < seed) {
-            curr += spaces[i];
-            i++;
-        }
-        res[0] = random.nextInt(rectangles[i][2] - rectangles[i][0]) + rectangles[i][0];
-        res[1] = random.nextInt(rectangles[i][3] - rectangles[i][1]) + rectangles[i][1];
+        int targ = rand.nextInt(tot);
 
-        return res;
+        int lo = 0;
+        int hi = rects.length - 1;
+        while (lo != hi) {
+            int mid = (lo + hi) / 2;
+            if (targ >= psum.get(mid)) lo = mid + 1;
+            else hi = mid;
+        }
+
+        int[] x = rects[lo];
+        int width = x[2] - x[0] + 1;
+        int height = x[3] - x[1] + 1;
+        int base = psum.get(lo) - width * height;
+        return new int[]{x[0] + (targ - base) % width, x[1] + (targ - base) / width};
     }
 }
