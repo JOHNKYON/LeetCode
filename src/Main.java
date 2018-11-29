@@ -1,4 +1,5 @@
 import questions.dataStructure.TreeNode;
+import questions.leetcode320.GeneralizedAbbreviation;
 import questions.leetcode324.WiggleSortII;
 import questions.leetcode348.DesignTicTacToe;
 
@@ -13,7 +14,7 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        WiggleSortII method= new WiggleSortII();
+        GeneralizedAbbreviation method= new GeneralizedAbbreviation();
 
         int[] input = {1, 5, 1, 1, 6, 4};
         int[][] B = {{0,0,0},
@@ -55,7 +56,7 @@ public class Main {
         special.add(c);
         special.add(d);
         System.out.print(" ");
-        method.wiggleSort(input);
+        method.generateAbbreviations("word");
     }
 
 }
