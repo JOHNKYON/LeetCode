@@ -1,6 +1,5 @@
 import questions.dataStructure.TreeNode;
-import questions.leetcode358.RearrangeStringkDistanceApart;
-import questions.leetcode692.TopKFrequentWords;
+import questions.leetcode493.ReversePairs;
 
 
 import java.io.IOException;
@@ -13,9 +12,9 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        TopKFrequentWords method= new TopKFrequentWords();
+        ReversePairs method= new ReversePairs();
 
-        int[] input = {1, 5, 1, 1, 6, 4};
+        int[] input = {2,4,3,5,1};
         int[][] B = {{0,0,0},
         {0,1,1},
             {0,0,1}};
@@ -55,7 +54,7 @@ public class Main {
         special.add(c);
         special.add(d);
         System.out.print(" ");
-        System.out.print(method.topKFrequent(strs,2));
+        System.out.print(method.reversePairs(input));
     }
 
 }
