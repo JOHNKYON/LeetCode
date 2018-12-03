@@ -1,5 +1,6 @@
 import questions.dataStructure.TreeNode;
 import questions.leetcode358.RearrangeStringkDistanceApart;
+import questions.leetcode692.TopKFrequentWords;
 
 
 import java.io.IOException;
@@ -12,7 +13,7 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        RearrangeStringkDistanceApart method= new RearrangeStringkDistanceApart();
+        TopKFrequentWords method= new TopKFrequentWords();
 
         int[] input = {1, 5, 1, 1, 6, 4};
         int[][] B = {{0,0,0},
@@ -20,7 +21,7 @@ public class Main {
             {0,0,1}};
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
-        String[] strs  = {"hot","dot","dog","lot","log","cog"};
+        String[] strs  = {"i", "love", "leetcode", "i", "love", "coding"};
         List<String> dict = new ArrayList<>();
         for (String str: strs)
             dict.add(str);
@@ -54,7 +55,7 @@ public class Main {
         special.add(c);
         special.add(d);
         System.out.print(" ");
-        System.out.print(method.rearrangeString("aaadbbcc",2));
+        System.out.print(method.topKFrequent(strs,2));
     }
 
 }
