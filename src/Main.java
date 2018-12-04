@@ -1,6 +1,6 @@
 import questions.dataStructure.ArrayReader;
 import questions.dataStructure.TreeNode;
-import questions.leetcode702.SearchinaSortedArrayofUnknownSize;
+import questions.leetcode126.WordLadderII;
 
 
 import java.io.IOException;
@@ -13,7 +13,7 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        SearchinaSortedArrayofUnknownSize method= new SearchinaSortedArrayofUnknownSize();
+        WordLadderII method= new WordLadderII();
 
         int[] input = {-1,0,3,5,9,12};
         ArrayReader reader = new ArrayReader(input);
@@ -23,7 +23,7 @@ public class Main {
             {0,0,1}};
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
-        String[] strs  = {"i", "love", "leetcode", "i", "love", "coding"};
+        String[] strs  = {"hot","dot","dog","lot","log"};
         List<String> dict = new ArrayList<>();
         for (String str: strs)
             dict.add(str);
@@ -57,7 +57,7 @@ public class Main {
         special.add(c);
         special.add(d);
         System.out.print(" ");
-        System.out.print(method.search2(reader, 13));
+        System.out.print(method.findLadders("hit", "cog", dict));
     }
 
 }
