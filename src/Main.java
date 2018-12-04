@@ -1,5 +1,5 @@
 import questions.dataStructure.TreeNode;
-import questions.leetcode493.ReversePairs;
+import questions.leetcode702.SearchinaSortedArrayofUnknownSize;
 
 
 import java.io.IOException;
@@ -12,9 +12,10 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        ReversePairs method= new ReversePairs();
+        SearchinaSortedArrayofUnknownSize method= new SearchinaSortedArrayofUnknownSize();
 
-        int[] input = {2,4,3,5,1};
+        int[] input = {-1,0,3,5,9,12};
+
         int[][] B = {{0,0,0},
         {0,1,1},
             {0,0,1}};
@@ -54,7 +55,7 @@ public class Main {
         special.add(c);
         special.add(d);
         System.out.print(" ");
-        System.out.print(method.reversePairs(input));
+        System.out.print(method.search(input, 13));
     }
 
 }
