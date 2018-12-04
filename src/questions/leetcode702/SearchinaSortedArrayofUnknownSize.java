@@ -1,8 +1,9 @@
 package questions.leetcode702;
 
+import questions.dataStructure.ArrayReader;
+
 public class SearchinaSortedArrayofUnknownSize {
-    public int search(int[] nums, int target) {
-        ArrayReader reader = new ArrayReader(nums);
+    public int search(ArrayReader reader, int target) {
         int hi = 10000;
         return binarySearch(reader, target, 0, hi);
     }
@@ -48,18 +49,22 @@ public class SearchinaSortedArrayofUnknownSize {
     }
 
 
-    public class ArrayReader{
-        int[] nums;
+    public int search2(ArrayReader reader, int target) {
+        int hi = 1;
+        while (reader.get(hi) < target)
+            hi <<= 1;
+        int lo = hi >> 1;
 
-        public ArrayReader(int[] arr) {
-            nums = arr;
+        while (lo <= hi) {
+            int mid = lo + (hi - lo) / 2;
+            if (target == reader.get(mid))
+                return mid;
+            else if (target < reader.get(mid))
+                hi = mid - 1;
+            else
+                lo = mid + 1;
         }
-
-        public int get(int index) {
-            if (index >= nums.length)
-                return Integer.MAX_VALUE;
-            return nums[index];
-        }
+        return -1;
     }
 
 }

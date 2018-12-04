@@ -1,3 +1,4 @@
+import questions.dataStructure.ArrayReader;
 import questions.dataStructure.TreeNode;
 import questions.leetcode702.SearchinaSortedArrayofUnknownSize;
 
@@ -15,6 +16,7 @@ public class Main {
         SearchinaSortedArrayofUnknownSize method= new SearchinaSortedArrayofUnknownSize();
 
         int[] input = {-1,0,3,5,9,12};
+        ArrayReader reader = new ArrayReader(input);
 
         int[][] B = {{0,0,0},
         {0,1,1},
@@ -55,7 +57,7 @@ public class Main {
         special.add(c);
         special.add(d);
         System.out.print(" ");
-        System.out.print(method.search(input, 13));
+        System.out.print(method.search2(reader, 13));
     }
 
 }
