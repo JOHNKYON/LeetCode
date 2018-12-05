@@ -1,6 +1,7 @@
 import questions.dataStructure.ArrayReader;
 import questions.dataStructure.TreeNode;
 import questions.leetcode126.WordLadderII;
+import questions.leetcode845.LongestMountaininArrayLongestMountaininArray;
 
 
 import java.io.IOException;
@@ -13,9 +14,9 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        WordLadderII method= new WordLadderII();
+        LongestMountaininArrayLongestMountaininArray method= new LongestMountaininArrayLongestMountaininArray();
 
-        int[] input = {-1,0,3,5,9,12};
+        int[] input = {2,3,3,2,0,2};
         ArrayReader reader = new ArrayReader(input);
 
         int[][] B = {{0,0,0},
@@ -57,7 +58,7 @@ public class Main {
         special.add(c);
         special.add(d);
         System.out.print(" ");
-        System.out.print(method.findLadders("hit", "cog", dict));
+        System.out.print(method.longestMountain(input));
     }
 
 }
