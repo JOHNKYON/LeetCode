@@ -16,7 +16,7 @@ public class Main {
         ReconstructItinerary method= new ReconstructItinerary();
 
         int[] input = {2,3,3,2,0,2};
-        ArrayReader reader = new ArrayReader(input);
+        ReconstructItinerary reader = new ReconstructItinerary();
 
         int[][] B = {{0,0,0},
         {0,1,1},
@@ -58,7 +58,11 @@ public class Main {
         special.add(c);
         special.add(d);
         System.out.print(" ");
-        System.out.print(method.findItinerary(pairs));
+        method.insert(1);
+        method.insert(1);
+        method.insert(2);
+        method.remove(1);
+        System.out.print(method.getRandom());
     }
 
 }

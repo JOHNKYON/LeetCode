@@ -3,19 +3,44 @@ package questions.leetcode332;
 import java.util.*;
 
 public class ReconstructItinerary {
-    public List<String> findItinerary(String[][] tickets) {
-        for (String[] ticket : tickets)
-            targets.computeIfAbsent(ticket[0], k -> new PriorityQueue()).add(ticket[1]);
-        visit("JFK");
-        return route;
+    ArrayList<Integer> nums;
+    HashMap<Integer, Set<Integer>> locs;
+    java.util.Random rand = new java.util.Random();
+    /** Initialize your data structure here. */
+    public ReconstructItinerary() {
+        nums = new ArrayList<Integer>();
+        locs = new HashMap<Integer, Set<Integer>>();
     }
 
-    Map<String, PriorityQueue<String>> targets = new HashMap<>();
-    List<String> route = new LinkedList();
+    /** Inserts a value to the collection. Returns true if the collection did not already contain the specified element. */
+    public boolean insert(int val) {
+        boolean contain = locs.containsKey(val);
+        if ( ! contain ) locs.put( val, new LinkedHashSet<Integer>() );
+        locs.get(val).add(nums.size());
+        nums.add(val);
+        return ! contain ;
+    }
 
-    void visit(String airport) {
-        while(targets.containsKey(airport) && !targets.get(airport).isEmpty())
-            visit(targets.get(airport).poll());
-        route.add(0, airport);
+    /** Removes a value from the collection. Returns true if the collection contained the specified element. */
+    public boolean remove(int val) {
+        boolean contain = locs.containsKey(val);
+        if ( ! contain ) return false;
+        int loc = locs.get(val).iterator().next();
+        locs.get(val).remove(loc);
+        if (loc < nums.size() - 1 ) {
+            int lastone = nums.get( nums.size()-1 );
+            nums.set( loc , lastone );
+            locs.get(lastone).remove( nums.size()-1);
+            locs.get(lastone).add(loc);
+        }
+        nums.remove(nums.size() - 1);
+
+        if (locs.get(val).isEmpty()) locs.remove(val);
+        return true;
+    }
+
+    /** Get a random element from the collection. */
+    public int getRandom() {
+        return nums.get( rand.nextInt(nums.size()) );
     }
 }
