@@ -1,5 +1,5 @@
 import questions.dataStructure.TreeNode;
-import questions.leetcode799.ChampagneTower;
+import questions.leetcode936.StampingTheSequence;
 
 
 import java.io.IOException;
@@ -12,7 +12,7 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        ChampagneTower method= new ChampagneTower();
+        StampingTheSequence method= new StampingTheSequence();
 
         int[] input = {2,3,3,2,0,2};
 
@@ -56,7 +56,7 @@ public class Main {
         special.add(c);
         special.add(d);
         System.out.print(" ");
-        System.out.print(method.champagneTower(2, 1, 1));
+        System.out.print(method.movesToStamp("abca", "aabcaca"));
     }
 
 }
