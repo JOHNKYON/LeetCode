@@ -1,6 +1,6 @@
 import questions.dataStructure.TreeNode;
-import questions.leetcode936.StampingTheSequence;
-
+import questions.leetcode43.MultiplyStrings;
+import questions.leetcode724.FindPivotIndex;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,9 +12,9 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        StampingTheSequence method= new StampingTheSequence();
+        FindPivotIndex method= new FindPivotIndex();
 
-        int[] input = {2,3,3,2,0,2};
+        int[] input = {-1,-1,-1,-1,-1,0};
 
         int[][] B = {{0,0,0},
         {0,1,1},
@@ -56,7 +56,7 @@ public class Main {
         special.add(c);
         special.add(d);
         System.out.print(" ");
-        System.out.print(method.movesToStamp("abca", "aabcaca"));
+        System.out.print(method.pivotIndex(input));
     }
 
 }
