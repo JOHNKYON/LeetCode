@@ -14,7 +14,7 @@ public class Main {
 
         FindPivotIndex method= new FindPivotIndex();
 
-        int[] input = {-1,-1,-1,-1,-1,0};
+        int[] input = {-1,-1,0,1,1,0};
 
         int[][] B = {{0,0,0},
         {0,1,1},
