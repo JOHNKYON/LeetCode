@@ -36,6 +36,8 @@ public class MultiplyStrings {
                 c = num / 10;
             }
         }
+        if (c != 0)
+            sb.insert(0, c);
     }
 
     private String oneBitMul(String num1, char num2) {

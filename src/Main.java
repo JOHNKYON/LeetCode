@@ -12,7 +12,7 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        FindPivotIndex method= new FindPivotIndex();
+        MultiplyStrings method= new MultiplyStrings();
 
         int[] input = {-1,-1,0,1,1,0};
 
@@ -56,7 +56,7 @@ public class Main {
         special.add(c);
         special.add(d);
         System.out.print(" ");
-        System.out.print(method.pivotIndex(input));
+        System.out.print(method.multiply("140", "721"));
     }
 
 }
