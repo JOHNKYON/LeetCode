@@ -1,6 +1,5 @@
-import questions.dataStructure.ArrayReader;
 import questions.dataStructure.TreeNode;
-import questions.leetcode332.ReconstructItinerary;
+import questions.leetcode936.StampingTheSequence;
 
 
 import java.io.IOException;
@@ -13,10 +12,9 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        ReconstructItinerary method= new ReconstructItinerary();
+        StampingTheSequence method= new StampingTheSequence();
 
         int[] input = {2,3,3,2,0,2};
-        ReconstructItinerary reader = new ReconstructItinerary();
 
         int[][] B = {{0,0,0},
         {0,1,1},
@@ -58,11 +56,7 @@ public class Main {
         special.add(c);
         special.add(d);
         System.out.print(" ");
-        method.insert(1);
-        method.insert(1);
-        method.insert(2);
-        method.remove(1);
-        System.out.print(method.getRandom());
+        System.out.print(method.movesToStamp("abca", "aabcaca"));
     }
 
 }
