@@ -1,5 +1,7 @@
+import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
 import questions.leetcode333.LargestBSTSubtree;
+import questions.leetcode708.InsertintoaCyclicSortedList;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,13 +13,20 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        LargestBSTSubtree method= new LargestBSTSubtree();
+        InsertintoaCyclicSortedList method= new InsertintoaCyclicSortedList();
 
         int[] input = {-1,-1,0,1,1,0};
 
         int[][] B = {{0,0,0},
         {0,1,1},
             {0,0,1}};
+        Node n1 = new Node(1, null);
+        Node n3 = new Node(3, null);
+        Node n4 = new Node(4, null);
+        n1.next = n3;
+        n3.next = n4;
+        n4.next = n1;
+
         TreeNode root = new TreeNode(3);
         root.left = new TreeNode(1);
         root.left.right = new TreeNode(2);
@@ -53,7 +62,7 @@ public class Main {
             }
         };
         System.out.print(" ");
-        System.out.print(method.largestBSTSubtree(root));
+        System.out.print(method.insert(n3, 2));
     }
 
 }
