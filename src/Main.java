@@ -1,6 +1,5 @@
 import questions.dataStructure.TreeNode;
-import questions.leetcode43.MultiplyStrings;
-import questions.leetcode724.FindPivotIndex;
+import questions.leetcode333.LargestBSTSubtree;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,15 +11,16 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        MultiplyStrings method= new MultiplyStrings();
+        LargestBSTSubtree method= new LargestBSTSubtree();
 
         int[] input = {-1,-1,0,1,1,0};
 
         int[][] B = {{0,0,0},
         {0,1,1},
             {0,0,1}};
-        TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(2);
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(1);
+        root.left.right = new TreeNode(2);
         String[] strs  = {"hot","dot","dog","lot","log"};
         String[][] pairs = {{"JFK","SFO"}};
         List<String> dict = new ArrayList<>();
@@ -52,11 +52,8 @@ public class Main {
                 add(10);
             }
         };
-        List<List<Integer>> special = new ArrayList<>();
-        special.add(c);
-        special.add(d);
         System.out.print(" ");
-        System.out.print(method.multiply("140", "721"));
+        System.out.print(method.largestBSTSubtree(root));
     }
 
 }
