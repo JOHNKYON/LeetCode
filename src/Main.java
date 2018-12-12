@@ -1,6 +1,7 @@
 import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
 import questions.leetcode373.FindKPairswithSmallestSums;
+import questions.leetcode765.CouplesHoldingHands;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,9 +13,9 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        FindKPairswithSmallestSums method= new FindKPairswithSmallestSums();
+        CouplesHoldingHands method= new CouplesHoldingHands();
 
-        int[] input = {1,2,4,5,6};
+        int[] input = {0,2,4,6,7,1,3,5};
         int[] input2 = {3,5,7,9};
 
         int[][] B = {{0,0,0},
@@ -62,7 +63,7 @@ public class Main {
             }
         };
         System.out.print(" ");
-        System.out.print(method.kSmallestPairs(input, input2, 3));
+        System.out.print(method.minSwapsCouples(input));
     }
 
 }
