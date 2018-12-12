@@ -1,7 +1,6 @@
 import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
-import questions.leetcode333.LargestBSTSubtree;
-import questions.leetcode708.InsertintoaCyclicSortedList;
+import questions.leetcode373.FindKPairswithSmallestSums;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,9 +12,10 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        InsertintoaCyclicSortedList method= new InsertintoaCyclicSortedList();
+        FindKPairswithSmallestSums method= new FindKPairswithSmallestSums();
 
-        int[] input = {-1,-1,0,1,1,0};
+        int[] input = {1,2,4,5,6};
+        int[] input2 = {3,5,7,9};
 
         int[][] B = {{0,0,0},
         {0,1,1},
@@ -62,7 +62,7 @@ public class Main {
             }
         };
         System.out.print(" ");
-        System.out.print(method.insert(n3, 2));
+        System.out.print(method.kSmallestPairs(input, input2, 3));
     }
 
 }
