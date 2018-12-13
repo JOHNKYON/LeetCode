@@ -1,7 +1,6 @@
 import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
-import questions.leetcode373.FindKPairswithSmallestSums;
-import questions.leetcode765.CouplesHoldingHands;
+import questions.leetcode498.DiagonalTraverse;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,14 +12,14 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        CouplesHoldingHands method= new CouplesHoldingHands();
+        DiagonalTraverse method= new DiagonalTraverse();
 
         int[] input = {0,2,4,6,7,1,3,5};
         int[] input2 = {3,5,7,9};
 
-        int[][] B = {{0,0,0},
-        {0,1,1},
-            {0,0,1}};
+        int[][] B = {{1,2,3},
+                    {4,5,6},
+                    {7,8,9}};
         Node n1 = new Node(1, null);
         Node n3 = new Node(3, null);
         Node n4 = new Node(4, null);
@@ -63,7 +62,7 @@ public class Main {
             }
         };
         System.out.print(" ");
-        System.out.print(method.minSwapsCouples(input));
+        System.out.print(method.findDiagonalOrder(B));
     }
 
 }
