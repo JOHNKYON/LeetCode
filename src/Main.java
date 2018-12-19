@@ -1,5 +1,6 @@
 import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
+import questions.leetcode261.GraphValidTree;
 import questions.leetcode41.FisrtMissingPositive;
 
 import java.io.IOException;
@@ -12,12 +13,12 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        FisrtMissingPositive method= new FisrtMissingPositive();
+        GraphValidTree method= new GraphValidTree();
 
         int[] input = {3,4,-1,1};
         int[] input2 = {3,5,7,9};
 
-        int[][] B = {{4,1,2}, {5,0,3}};
+        int[][] B = {{0,1}, {0,2}, {0,3}, {1,4}};
         Node n1 = new Node(1, null);
         Node n3 = new Node(3, null);
         Node n4 = new Node(4, null);
@@ -60,7 +61,7 @@ public class Main {
             }
         };
         System.out.print(" ");
-        System.out.print(method.firstMissingPositive(input));
+        System.out.print(method.validTree(5, B));
     }
 
 }
