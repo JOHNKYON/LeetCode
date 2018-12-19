@@ -1,6 +1,6 @@
 import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
-import questions.leetcode640.SolveTheEquation;
+import questions.leetcode773.SlidingPuzzle;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,14 +12,12 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        SolveTheEquation method= new SolveTheEquation();
+        SlidingPuzzle method= new SlidingPuzzle();
 
         int[] input = {0,2,4,6,7,1,3,5};
         int[] input2 = {3,5,7,9};
 
-        int[][] B = {{1,2,3},
-                    {4,5,6},
-                    {7,8,9}};
+        int[][] B = {{4,1,2}, {5,0,3}};
         Node n1 = new Node(1, null);
         Node n3 = new Node(3, null);
         Node n4 = new Node(4, null);
@@ -62,7 +60,7 @@ public class Main {
             }
         };
         System.out.print(" ");
-        System.out.print(method.solveEquation("x+5-3+x=6+x-2"));
+        System.out.print(method.slidingPuzzle(B));
     }
 
 }
