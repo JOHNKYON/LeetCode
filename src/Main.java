@@ -1,6 +1,6 @@
 import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
-import questions.leetcode773.SlidingPuzzle;
+import questions.leetcode277.FindtheCelebrity;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        SlidingPuzzle method= new SlidingPuzzle();
+        FindtheCelebrity method= new FindtheCelebrity();
 
         int[] input = {0,2,4,6,7,1,3,5};
         int[] input2 = {3,5,7,9};
@@ -60,7 +60,7 @@ public class Main {
             }
         };
         System.out.print(" ");
-        System.out.print(method.slidingPuzzle(B));
+        System.out.print(method.findCelebrity(2));
     }
 
 }
