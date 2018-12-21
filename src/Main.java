@@ -14,10 +14,10 @@ public class Main {
 
         FindtheCelebrity method= new FindtheCelebrity();
 
-        int[] input = {0,2,4,6,7,1,3,5};
+        int[] input = {3,4,-1,1};
         int[] input2 = {3,5,7,9};
 
-        int[][] B = {{4,1,2}, {5,0,3}};
+        int[][] B = {{0,1}, {0,2}, {0,3}, {1,4}};
         Node n1 = new Node(1, null);
         Node n3 = new Node(3, null);
         Node n4 = new Node(4, null);
