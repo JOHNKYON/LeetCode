@@ -1,6 +1,6 @@
 import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
-import questions.leetcode277.FindtheCelebrity;
+import questions.leetcode792.NumberofMatchingSubsequences;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        FindtheCelebrity method= new FindtheCelebrity();
+        NumberofMatchingSubsequences method= new NumberofMatchingSubsequences();
 
         int[] input = {3,4,-1,1};
         int[] input2 = {3,5,7,9};
@@ -28,7 +28,7 @@ public class Main {
         TreeNode root = new TreeNode(3);
         root.left = new TreeNode(1);
         root.left.right = new TreeNode(2);
-        String[] strs  = {"hot","dot","dog","lot","log"};
+        String[] strs  = {"a", "bb", "acd", "ace"};
         String[][] pairs = {{"JFK","SFO"}};
         List<String> dict = new ArrayList<>();
         for (String str: strs)
@@ -60,7 +60,7 @@ public class Main {
             }
         };
         System.out.print(" ");
-        System.out.print(method.findCelebrity(2));
+        System.out.print(method.numMatchingSubseq("abcde",strs));
     }
 
 }
