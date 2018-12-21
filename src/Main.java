@@ -1,6 +1,6 @@
 import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
-import questions.leetcode792.NumberofMatchingSubsequences;
+import questions.leetcode518.CoinChange2;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,9 +12,9 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        NumberofMatchingSubsequences method= new NumberofMatchingSubsequences();
+        CoinChange2 method= new CoinChange2();
 
-        int[] input = {3,4,-1,1};
+        int[] input = {1,2,5};
         int[] input2 = {3,5,7,9};
 
         int[][] B = {{0,1}, {0,2}, {0,3}, {1,4}};
@@ -60,7 +60,7 @@ public class Main {
             }
         };
         System.out.print(" ");
-        System.out.print(method.numMatchingSubseq("abcde",strs));
+        System.out.print(method.change(10,input));
     }
 
 }
