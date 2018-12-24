@@ -1,6 +1,6 @@
 import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
-import questions.leetcode518.CoinChange2;
+import questions.leetcode837.New21Game;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        CoinChange2 method= new CoinChange2();
+        New21Game method= new New21Game();
 
         int[] input = {1,2,5};
         int[] input2 = {3,5,7,9};
@@ -60,7 +60,7 @@ public class Main {
             }
         };
         System.out.print(" ");
-        System.out.print(method.change(10,input));
+        System.out.print(method.new21Game(1,1,2));
     }
 
 }
