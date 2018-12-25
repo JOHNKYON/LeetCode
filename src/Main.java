@@ -1,6 +1,6 @@
 import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
-import questions.leetcode837.New21Game;
+import questions.leetcode310.MinimumHeightTrees;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,12 +12,12 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        New21Game method= new New21Game();
+        MinimumHeightTrees method= new MinimumHeightTrees();
 
         int[] input = {1,2,5};
         int[] input2 = {3,5,7,9};
 
-        int[][] B = {{0,1}, {0,2}, {0,3}, {1,4}};
+        int[][] two_d_array = {{0,1}, {0,2}, {0,3}, {3,4}, {4,5}};
         Node n1 = new Node(1, null);
         Node n3 = new Node(3, null);
         Node n4 = new Node(4, null);
@@ -60,7 +60,7 @@ public class Main {
             }
         };
         System.out.print(" ");
-        System.out.print(method.new21Game(1,1,2));
+        System.out.print(method.findMinHeightTrees(4,two_d_array));
     }
 
 }
