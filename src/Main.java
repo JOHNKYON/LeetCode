@@ -1,5 +1,6 @@
 import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
+import questions.leetcode151.ReverseWordsinaString;
 import questions.leetcode310.MinimumHeightTrees;
 
 import java.io.IOException;
@@ -12,7 +13,7 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        MinimumHeightTrees method= new MinimumHeightTrees();
+        ReverseWordsinaString method= new ReverseWordsinaString();
 
         int[] input = {1,2,5};
         int[] input2 = {3,5,7,9};
@@ -59,8 +60,7 @@ public class Main {
                 add(10);
             }
         };
-        System.out.print(" ");
-        System.out.print(method.findMinHeightTrees(4,two_d_array));
+        System.out.print(method.reverseWords("  i"));
     }
 
 }
