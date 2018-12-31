@@ -1,7 +1,7 @@
 import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
-import questions.leetcode151.ReverseWordsinaString;
-import questions.leetcode310.MinimumHeightTrees;
+import questions.dataStructure.ListNode;
+import questions.leetcode25.ReverseNodesInKGroup;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,22 +13,23 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        ReverseWordsinaString method= new ReverseWordsinaString();
+        ReverseNodesInKGroup method= new ReverseNodesInKGroup();
 
         int[] input = {1,2,5};
         int[] input2 = {3,5,7,9};
 
         int[][] two_d_array = {{0,1}, {0,2}, {0,3}, {3,4}, {4,5}};
-        Node n1 = new Node(1, null);
-        Node n3 = new Node(3, null);
-        Node n4 = new Node(4, null);
-        n1.next = n3;
-        n3.next = n4;
-        n4.next = n1;
 
-        TreeNode root = new TreeNode(3);
-        root.left = new TreeNode(1);
-        root.left.right = new TreeNode(2);
+        ListNode n1 = new ListNode(1);
+        ListNode n2 = new ListNode(2);
+        ListNode n3 = new ListNode(3);
+        ListNode n4 = new ListNode(4);
+        ListNode n5 = new ListNode(5);
+        n1.next = n2;
+        n2.next = n3;
+        n3.next = n4;
+        n4.next = n5;
+
         String[] strs  = {"a", "bb", "acd", "ace"};
         String[][] pairs = {{"JFK","SFO"}};
         List<String> dict = new ArrayList<>();
@@ -60,7 +61,7 @@ public class Main {
                 add(10);
             }
         };
-        System.out.print(method.reverseWords("  i"));
+        System.out.print(method.reverseKGroup(n1, 2));
     }
 
 }
