@@ -1,7 +1,7 @@
 import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
 
-import questions.leetcode16.ThreeSumClosest;
+import questions.leetcode924.MinimizeMalwareSpread;
 
 
 import java.io.IOException;
@@ -14,12 +14,12 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        ThreeSumClosest method= new ThreeSumClosest();
+        MinimizeMalwareSpread method= new MinimizeMalwareSpread();
 
-        int[] input = {1,2,5,10, 11};
+        int[] one_d_array = {1,3,0};
         int[] input2 = {3,5,7,9};
 
-        int[][] two_d_array = {{0,1}, {0,2}, {0,3}, {3,4}, {4,5}};
+        int[][] two_d_array = {{1,0,0,0,1,0,0,0,0,0},{0,1,1,0,0,0,0,0,0,0},{0,1,1,0,0,1,0,0,0,0},{0,0,0,1,0,0,0,0,0,0},{1,0,0,0,1,0,0,0,0,0},{0,0,1,0,0,1,0,0,0,0},{0,0,0,0,0,0,1,0,0,1},{0,0,0,0,0,0,0,1,0,0},{0,0,0,0,0,0,0,0,1,0},{0,0,0,0,0,0,1,0,0,1}};
 
 
         String[] strs  = {"a", "bb", "acd", "ace"};
@@ -55,7 +55,7 @@ public class Main {
         };
 
         System.out.print(" ");
-        System.out.print(method.threeSumClosest(input, 12));
+        System.out.print(method.minMalwareSpread(two_d_array, one_d_array));
     }
 
 }
