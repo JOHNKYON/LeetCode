@@ -1,8 +1,8 @@
 import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
+
 import questions.leetcode16.ThreeSumClosest;
-import questions.leetcode310.MinimumHeightTrees;
-import questions.leetcode393.UTF8Validation;
+
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -20,16 +20,8 @@ public class Main {
         int[] input2 = {3,5,7,9};
 
         int[][] two_d_array = {{0,1}, {0,2}, {0,3}, {3,4}, {4,5}};
-        Node n1 = new Node(1, null);
-        Node n3 = new Node(3, null);
-        Node n4 = new Node(4, null);
-        n1.next = n3;
-        n3.next = n4;
-        n4.next = n1;
 
-        TreeNode root = new TreeNode(3);
-        root.left = new TreeNode(1);
-        root.left.right = new TreeNode(2);
+
         String[] strs  = {"a", "bb", "acd", "ace"};
         String[][] pairs = {{"JFK","SFO"}};
         List<String> dict = new ArrayList<>();
@@ -61,6 +53,7 @@ public class Main {
                 add(10);
             }
         };
+
         System.out.print(" ");
         System.out.print(method.threeSumClosest(input, 12));
     }
