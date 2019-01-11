@@ -1,6 +1,8 @@
+import questions.dataStructure.ListNode;
 import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
 
+import questions.leetcode147.InsertionSortList;
 import questions.leetcode924.MinimizeMalwareSpread;
 
 
@@ -14,7 +16,7 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        MinimizeMalwareSpread method= new MinimizeMalwareSpread();
+        InsertionSortList method= new InsertionSortList();
 
         int[] one_d_array = {1,3,0};
         int[] input2 = {3,5,7,9};
@@ -53,9 +55,14 @@ public class Main {
                 add(10);
             }
         };
+        ListNode n1 = new ListNode(4);
+        ListNode n2 = new ListNode(2);
+        ListNode n3 = new ListNode(1);
+        ListNode n4 = new ListNode(3);
+        n1.next = n2; n2.next = n3; n3.next = n4;
 
         System.out.print(" ");
-        System.out.print(method.minMalwareSpread(two_d_array, one_d_array));
+        System.out.print(method.insertionSortList(n1));
     }
 
 }
