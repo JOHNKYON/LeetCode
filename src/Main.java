@@ -1,7 +1,9 @@
+import questions.dataStructure.ListNode;
 import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
 
 import questions.leetcode16.ThreeSumClosest;
+import questions.leetcode86.PartitionList;
 
 
 import java.io.IOException;
@@ -14,7 +16,7 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        ThreeSumClosest method= new ThreeSumClosest();
+        PartitionList method= new PartitionList();
 
         int[] input = {1,2,5,10, 11};
         int[] input2 = {3,5,7,9};
@@ -25,6 +27,9 @@ public class Main {
         String[] strs  = {"a", "bb", "acd", "ace"};
         String[][] pairs = {{"JFK","SFO"}};
         List<String> dict = new ArrayList<>();
+        ListNode n1 = new ListNode(2);
+        ListNode n2 = new ListNode(1);
+        n1.next = n2;
         for (String str: strs)
             dict.add(str);
         List<Integer> a = new ArrayList<Integer>(){
@@ -55,7 +60,7 @@ public class Main {
         };
 
         System.out.print(" ");
-        System.out.print(method.threeSumClosest(input, 12));
+        System.out.print(method.partition(n1, 2));
     }
 
 }
