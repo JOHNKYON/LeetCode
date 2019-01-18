@@ -17,10 +17,10 @@ public class Main {
 
         DesignLinkedList method= new DesignLinkedList();
 
-        int[] input = {1,2,5,10, 11};
+        int[] one_d_array = {1,3,0};
         int[] input2 = {3,5,7,9};
 
-        int[][] two_d_array = {{0,1}, {0,2}, {0,3}, {3,4}, {4,5}};
+        int[][] two_d_array = {{1,0,0,0,1,0,0,0,0,0},{0,1,1,0,0,0,0,0,0,0},{0,1,1,0,0,1,0,0,0,0},{0,0,0,1,0,0,0,0,0,0},{1,0,0,0,1,0,0,0,0,0},{0,0,1,0,0,1,0,0,0,0},{0,0,0,0,0,0,1,0,0,1},{0,0,0,0,0,0,0,1,0,0},{0,0,0,0,0,0,0,0,1,0},{0,0,0,0,0,0,1,0,0,1}};
 
 
         String[] strs  = {"a", "bb", "acd", "ace"};
@@ -57,6 +57,11 @@ public class Main {
                 add(10);
             }
         };
+        ListNode n1 = new ListNode(4);
+        ListNode n2 = new ListNode(2);
+        ListNode n3 = new ListNode(1);
+        ListNode n4 = new ListNode(3);
+        n1.next = n2; n2.next = n3; n3.next = n4;
 
         method.addAtHead(7);method.addAtHead(2);method.addAtHead(1);method.addAtIndex(3,0);
         method.deleteAtIndex(2);method.addAtHead(6);method.addAtTail(4);method.get(4);method.addAtHead(4);
