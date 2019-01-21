@@ -2,7 +2,7 @@ import questions.dataStructure.ListNode;
 import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
 
-import questions.leetcode707.DesignLinkedList;
+import questions.leetcode716.MaxStack;
 
 
 import java.io.IOException;
@@ -15,7 +15,7 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        DesignLinkedList method= new DesignLinkedList();
+        MaxStack method= new MaxStack();
 
         int[] one_d_array = {1,3,0};
         int[] input2 = {3,5,7,9};
@@ -57,16 +57,9 @@ public class Main {
                 add(10);
             }
         };
-        ListNode n1 = new ListNode(4);
-        ListNode n2 = new ListNode(2);
-        ListNode n3 = new ListNode(1);
-        ListNode n4 = new ListNode(3);
-        n1.next = n2; n2.next = n3; n3.next = n4;
 
-        method.addAtHead(7);method.addAtHead(2);method.addAtHead(1);method.addAtIndex(3,0);
-        method.deleteAtIndex(2);method.addAtHead(6);method.addAtTail(4);method.get(4);method.addAtHead(4);
-        method.addAtIndex(5, 0);method.addAtHead(6);
-        System.out.print(" ");
+        method.push(5); method.push(1); method.push(-5); method.popMax();method.popMax();
+
 //        System.out.print(method.partition(n1, 2));
     }
 
