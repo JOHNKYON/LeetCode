@@ -2,7 +2,7 @@ import questions.dataStructure.ListNode;
 import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
 
-import questions.leetcode716.MaxStack;
+import questions.leetcode819.MostCommonWord;
 
 
 import java.io.IOException;
@@ -15,7 +15,7 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        MaxStack method= new MaxStack();
+        MostCommonWord method= new MostCommonWord();
 
         int[] one_d_array = {1,3,0};
         int[] input2 = {3,5,7,9};
@@ -23,7 +23,7 @@ public class Main {
         int[][] two_d_array = {{1,0,0,0,1,0,0,0,0,0},{0,1,1,0,0,0,0,0,0,0},{0,1,1,0,0,1,0,0,0,0},{0,0,0,1,0,0,0,0,0,0},{1,0,0,0,1,0,0,0,0,0},{0,0,1,0,0,1,0,0,0,0},{0,0,0,0,0,0,1,0,0,1},{0,0,0,0,0,0,0,1,0,0},{0,0,0,0,0,0,0,0,1,0},{0,0,0,0,0,0,1,0,0,1}};
 
 
-        String[] strs  = {"a", "bb", "acd", "ace"};
+        String[] strs  = {"a"};
         String[][] pairs = {{"JFK","SFO"}};
         List<String> dict = new ArrayList<>();
         ListNode n1 = new ListNode(2);
@@ -58,9 +58,7 @@ public class Main {
             }
         };
 
-        method.push(5); method.push(1); method.push(-5); method.popMax();method.popMax();
-
-//        System.out.print(method.partition(n1, 2));
+        System.out.print(method.mostCommonWord("a, a, a, a, b,b,b,c, c", strs));
     }
 
 }
