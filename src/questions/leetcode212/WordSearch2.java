@@ -56,4 +56,69 @@ public class WordSearch2 {
         TrieNode[] next = new TrieNode[26];
         String word;
     }
+
+    List<String> ans;
+    public List<String> findWords2(char[][] board, String[] words) {
+        ans = new ArrayList<>();
+        if (board == null || board.length == 0)
+            return ans;
+
+        TreeNode root = new TreeNode();
+        for (String word: words) {
+            buildTree(root, word);
+        }
+
+        for (int i=0; i<board.length; i++) {
+            for (int j=0; j<board[0].length; j++) {
+                search(new StringBuilder(), board, i, j, root);
+            }
+        }
+        return ans;
+    }
+
+    private void search(StringBuilder sb, char[][] board, int i, int j, TreeNode root) {
+        if (i < 0 || i >= board.length || j < 0 || j >= board[0].length || board[i][j] == '#')
+            return;
+
+        int[][] moves = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+
+        char temp = board[i][j];
+        int index = temp - 'a';
+        board[i][j] = '#';
+        if (root.kids[index] != null) {
+            sb.append(temp);
+            root = root.kids[index];
+            if (root.flag) {
+                ans.add(sb.toString());
+                root.flag = false;
+            }
+
+            for (int[] move: moves) {
+                search(sb, board, i+move[0], j+move[1], root);
+            }
+            sb.deleteCharAt(sb.length()-1);
+        }
+        board[i][j] = temp;
+    }
+
+    private void buildTree(TreeNode root, String s) {
+        TreeNode curr = root;
+        for (char c: s.toCharArray()) {
+            int index = c - 'a';
+            if (curr.kids[index] == null)
+                curr.kids[index] = new TreeNode();
+            curr = curr.kids[index];
+        }
+        curr.flag = true;
+    }
+
+    private class TreeNode {
+        TreeNode[] kids;
+        boolean flag;
+
+        public TreeNode() {
+            kids = new TreeNode[26];
+            flag = false;
+        }
+    }
 }
