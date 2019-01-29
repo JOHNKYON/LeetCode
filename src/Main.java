@@ -1,9 +1,7 @@
 import questions.dataStructure.ListNode;
-import questions.dataStructure.Node;
 import questions.dataStructure.TreeNode;
 
-import questions.leetcode212.WordSearch2;
-import questions.leetcode819.MostCommonWord;
+import questions.leetcode449.SerializeandDeserializeBST;
 
 
 import java.io.IOException;
@@ -16,7 +14,7 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        WordSearch2 method= new WordSearch2();
+        SerializeandDeserializeBST method= new SerializeandDeserializeBST();
 
         int[] one_d_array = {1,3,0};
         int[] input2 = {3,5,7,9};
@@ -27,9 +25,11 @@ public class Main {
         String[] strs  = {"acdb"};
         char[][] pairs = {{'a', 'b'}, {'c', 'd'}};
         List<String> dict = new ArrayList<>();
-        ListNode n1 = new ListNode(2);
-        ListNode n2 = new ListNode(1);
-        n1.next = n2;
+        TreeNode n1 = new TreeNode(1);
+        TreeNode n2 = new TreeNode(2);
+        TreeNode n3 = new TreeNode(3);
+        n2.left = n1;
+        n2.right = n3;
         for (String str: strs)
             dict.add(str);
         List<Integer> a = new ArrayList<Integer>(){
@@ -59,7 +59,9 @@ public class Main {
             }
         };
 
-        System.out.print(method.findWords2(pairs, strs));
+        System.out.print(method.serialize(null));
+        String data = method.serialize(null);
+        method.deserialize(data);
     }
 
 }
