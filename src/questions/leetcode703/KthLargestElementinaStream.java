@@ -7,7 +7,7 @@ public class KthLargestElementinaStream {
     Queue<Integer> queue;
     int capability;
 
-    public KthLargest(int k, int[] nums) {
+    public KthLargestElementinaStream(int k, int[] nums) {
         queue = new PriorityQueue<>();
         capability = k;
         for (int i=0; i<nums.length; i++) {
