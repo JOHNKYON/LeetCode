@@ -1,7 +1,7 @@
 import questions.dataStructure.ListNode;
 import questions.dataStructure.TreeNode;
 
-import questions.leetcode937.ReorderLogFiles;
+import questions.leetcode227.BasicCalculatorII;
 
 
 import java.io.IOException;
@@ -14,7 +14,7 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        ReorderLogFiles method= new ReorderLogFiles();
+        BasicCalculatorII method= new BasicCalculatorII();
 
         int[] one_d_array = {1,3,0};
         int[] input2 = {3,5,7,9};
@@ -59,7 +59,7 @@ public class Main {
             }
         };
 
-        System.out.print(method.reorderLogFiles(strs));
+        System.out.print(method.calculate(" 3/2 "));
 ;
     }
 
