@@ -1,7 +1,7 @@
 import questions.dataStructure.ListNode;
 import questions.dataStructure.TreeNode;
 
-import questions.leetcode449.SerializeandDeserializeBST;
+import questions.leetcode937.ReorderLogFiles;
 
 
 import java.io.IOException;
@@ -14,7 +14,7 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        SerializeandDeserializeBST method= new SerializeandDeserializeBST();
+        ReorderLogFiles method= new ReorderLogFiles();
 
         int[] one_d_array = {1,3,0};
         int[] input2 = {3,5,7,9};
@@ -22,7 +22,7 @@ public class Main {
         int[][] two_d_array = {{1,0,0,0,1,0,0,0,0,0},{0,1,1,0,0,0,0,0,0,0},{0,1,1,0,0,1,0,0,0,0},{0,0,0,1,0,0,0,0,0,0},{1,0,0,0,1,0,0,0,0,0},{0,0,1,0,0,1,0,0,0,0},{0,0,0,0,0,0,1,0,0,1},{0,0,0,0,0,0,0,1,0,0},{0,0,0,0,0,0,0,0,1,0},{0,0,0,0,0,0,1,0,0,1}};
 
 
-        String[] strs  = {"acdb"};
+        String[] strs  = {"a1 9 2 3 1","g1 act car","zo4 4 7","ab1 off key dog","a8 act zoo"};
         char[][] pairs = {{'a', 'b'}, {'c', 'd'}};
         List<String> dict = new ArrayList<>();
         TreeNode n1 = new TreeNode(1);
@@ -59,9 +59,8 @@ public class Main {
             }
         };
 
-        System.out.print(method.serialize(null));
-        String data = method.serialize(null);
-        method.deserialize(data);
+        System.out.print(method.reorderLogFiles(strs));
+;
     }
 
 }
