@@ -1,5 +1,7 @@
 package questions.leetcode975;
 
+import java.util.TreeMap;
+
 public class OddEvenJump {
     int[] odds;
     int[] evens;
@@ -56,5 +58,38 @@ public class OddEvenJump {
             }
             return evens[i];
         }
+    }
+
+    public int oddEvenJumps2(int[] A) {
+        int n = A.length;
+        if (n == 0)
+            return 0;
+        boolean[] odd = new boolean[n];
+        boolean[] even = new boolean[n];
+        TreeMap<Integer, Integer> map = new TreeMap<>();
+        odd[n-1] = even[n-1] = true;
+        map.put(A[n-1], n-1);
+        for (int i=n-2; i>=0; i--) {
+            int val = A[i];
+            if (map.containsKey(val)) {
+                odd[i] = even[map.get(val)];
+                even[i] = odd[map.get(val)];
+            } else {
+                Integer lower = map.lowerKey(val);
+                Integer higher = map.higherKey(val);
+                if (lower != null) {
+                    even[i] = odd[map.get(lower)];
+                }
+                if (higher != null) {
+                    odd[i] = even[map.get(higher)];
+                }
+            }
+            map.put(val, i);
+        }
+        int ans = 0;
+        for (boolean b: odd)
+            if (b)
+                ans++;
+        return ans;
     }
 }
