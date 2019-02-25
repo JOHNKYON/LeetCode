@@ -1,7 +1,7 @@
 import questions.dataStructure.ListNode;
 import questions.dataStructure.TreeNode;
 
-import questions.leetcode227.BasicCalculatorII;
+import questions.leetcode763.PartitionLabels;
 
 
 import java.io.IOException;
@@ -14,7 +14,7 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        BasicCalculatorII method= new BasicCalculatorII();
+        PartitionLabels method= new PartitionLabels();
 
         int[] one_d_array = {1,3,0};
         int[] input2 = {3,5,7,9};
@@ -59,7 +59,7 @@ public class Main {
             }
         };
 
-        System.out.print(method.calculate(" 3/2 "));
+        System.out.print(method.partitionLabels("ababcbacadefegdehijhklij"));
 ;
     }
 
