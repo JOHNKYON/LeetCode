@@ -39,4 +39,25 @@ public class PartitionList {
             greater_tail.next = null;
         return new_head;
     }
+
+    public ListNode partition2(ListNode head, int x) {
+        ListNode curr = head;
+        ListNode dummyHeadL = new ListNode(0);
+        ListNode leftCurr = dummyHeadL;
+        ListNode dummyHeadR = new ListNode(0);
+        ListNode rightCurr = dummyHeadR;
+        while (curr != null) {
+            if (curr.val < x) {
+                leftCurr.next = curr;
+                leftCurr = curr;
+            } else {
+                rightCurr.next = curr;
+                rightCurr = curr;
+            }
+            curr = curr.next;
+        }
+        leftCurr.next = dummyHeadR.next;
+        rightCurr.next = null;
+        return dummyHeadL.next;
+    }
 }
