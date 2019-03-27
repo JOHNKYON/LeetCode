@@ -1,7 +1,7 @@
 import questions.dataStructure.ListNode;
 import questions.dataStructure.TreeNode;
 
-import questions.leetcode763.PartitionLabels;
+import questions.leetcode10.RegularExpressionMatching;
 
 
 import java.io.IOException;
@@ -14,7 +14,7 @@ public class Main {
 
         int[][] A = {{0,0,1}};
 
-        PartitionLabels method= new PartitionLabels();
+        RegularExpressionMatching method= new RegularExpressionMatching();
 
         int[] one_d_array = {1,3,0};
         int[] input2 = {3,5,7,9};
@@ -59,7 +59,7 @@ public class Main {
             }
         };
 
-        System.out.print(method.partitionLabels("ababcbacadefegdehijhklij"));
+        System.out.print(method.isMatch("aab", "c*a*b"));
 ;
     }
 
