@@ -5,6 +5,7 @@ import questions.leetcode10.RegularExpressionMatching;
 import questions.leetcode1028.ConverttoBaseNeg2;
 import questions.leetcode1030.NextGreaterNodeInLinkedList;
 import questions.leetcode642.AutocompleteSystem;
+import questions.weekly.Weekly;
 
 
 import java.io.IOException;
@@ -21,13 +22,13 @@ public class Main {
         int[] one_d_array = {3,3,3};
         int[] input2 = {3,5,7,9};
 
-        int[][] two_d_array = {{1,0,0,0,1,0,0,0,0,0},{0,1,1,0,0,0,0,0,0,0},{0,1,1,0,0,1,0,0,0,0},{0,0,0,1,0,0,0,0,0,0},{1,0,0,0,1,0,0,0,0,0},{0,0,1,0,0,1,0,0,0,0},{0,0,0,0,0,0,1,0,0,1},{0,0,0,0,0,0,0,1,0,0},{0,0,0,0,0,0,0,0,1,0},{0,0,0,0,0,0,1,0,0,1}};
+        int[][] two_d_array = {{0,4},{2, 8}};
 
 
-        String[] strs  = {"abc","abbc","a"};
+        String[] strs  = {"FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"};
         char[][] pairs = {{'a', 'b'}, {'c', 'd'}};
 
-        AutocompleteSystem method= new AutocompleteSystem(strs, one_d_array);
+        Weekly method= new Weekly();
 
 
         List<String> dict = new ArrayList<>();
@@ -69,21 +70,7 @@ public class Main {
 //        ListNode n2 = new ListNode(1);
 //        ListNode n3 = new ListNode(5);
 //        n1.next = n2;
-//        n2.next = n3;
-        method.input('b');
-        method.input('c');
-        method.input('#');
-        method.input('b');
-        method.input('c');
-        method.input('#');
-        method.input('a');
-        method.input('b');
-        method.input('c');
-        method.input('#');
-        method.input('a');
-        method.input('b');
-        method.input('c');
-        method.input('#');
+        method.videoStitching(two_d_array, 5);
 //        System.out.print(method.input('i'));
 ;
     }
