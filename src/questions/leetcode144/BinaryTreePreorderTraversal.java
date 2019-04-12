@@ -22,4 +22,19 @@ public class BinaryTreePreorderTraversal {
         }
         return ans;
     }
+
+    List<Integer> ans;
+    public List<Integer> preorderTraversal2(TreeNode root) {
+        ans = new ArrayList<>();
+        preorder(root);
+        return ans;
+    }
+
+    private void preorder(TreeNode root) {
+        if (root == null)
+            return;
+        ans.add(root.val);
+        preorder(root.left);
+        preorder(root.right);
+    }
 }
