@@ -6,6 +6,7 @@ import questions.leetcode1028.ConverttoBaseNeg2;
 import questions.leetcode1030.NextGreaterNodeInLinkedList;
 import questions.leetcode642.AutocompleteSystem;
 import questions.weekly.Weekly;
+import questions.weekly132.Solution;
 
 
 import java.io.IOException;
@@ -28,7 +29,7 @@ public class Main {
         String[] strs  = {"FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"};
         char[][] pairs = {{'a', 'b'}, {'c', 'd'}};
 
-        Weekly method= new Weekly();
+        Solution method= new Solution();
 
 
         List<String> dict = new ArrayList<>();
@@ -70,7 +71,7 @@ public class Main {
 //        ListNode n2 = new ListNode(1);
 //        ListNode n3 = new ListNode(5);
 //        n1.next = n2;
-        method.videoStitching(two_d_array, 5);
+        method.recoverFromPreorder("1-2--3--4-5--6--7");
 //        System.out.print(method.input('i'));
 ;
     }
