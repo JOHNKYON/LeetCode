@@ -5,7 +5,7 @@ public class Flatten2DVector {
     int j;
     int[][] v;
 
-    public Vector2D(int[][] v) {
+    public Flatten2DVector(int[][] v) {
         this.v = v;
         i = 0;
         j = -1;
