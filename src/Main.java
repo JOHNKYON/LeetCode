@@ -4,6 +4,7 @@ import questions.dataStructure.TreeNode;
 import questions.leetcode10.RegularExpressionMatching;
 import questions.leetcode1028.ConverttoBaseNeg2;
 import questions.leetcode1030.NextGreaterNodeInLinkedList;
+import questions.leetcode371.SumofTwoIntegers;
 import questions.leetcode642.AutocompleteSystem;
 import questions.weekly.Weekly;
 import questions.weekly132.Solution;
@@ -29,7 +30,7 @@ public class Main {
         String[] strs  = {"FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"};
         char[][] pairs = {{'a', 'b'}, {'c', 'd'}};
 
-        Solution method= new Solution();
+        SumofTwoIntegers method= new SumofTwoIntegers();
 
 
         List<String> dict = new ArrayList<>();
@@ -71,7 +72,7 @@ public class Main {
 //        ListNode n2 = new ListNode(1);
 //        ListNode n3 = new ListNode(5);
 //        n1.next = n2;
-        method.recoverFromPreorder("1-2--3--4-5--6--7");
+        method.getSum(2, 3);
 //        System.out.print(method.input('i'));
 ;
     }
