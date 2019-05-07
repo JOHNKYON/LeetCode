@@ -53,4 +53,44 @@ public class StrobogrammaticNumberII {
         }
         return;
     }
+
+    static char[] self = {
+            '0',
+            '1',
+            '8'
+    };
+
+    static char[][] changePairs = {
+            {'6','9'},
+            {'9','6'}
+    };
+    public List<String> findStrobogrammatic2(int n) {
+        char[] chars = new char[n];
+        int left = (n-1)/2;
+        int right = n / 2;
+        List<String> ans = new ArrayList<>();
+        buildString(chars, left, right, ans);
+        return ans;
+    }
+
+    private void buildString(char[] chars, int left, int right, List<String> ans) {
+        if (left < 0) {
+            ans.add(new String(chars));
+            return;
+        }
+        for (char c: self) {
+            if (left == 0 && c == '0' && chars.length != 1)
+                continue;
+            chars[left] = c;
+            chars[right] = c;
+            buildString(chars, left-1, right+1, ans);
+        }
+        if (left != right) {
+            for (char[] pair: changePairs) {
+                chars[left] = pair[0];
+                chars[right] = pair[1];
+                buildString(chars, left-1, right+1, ans);
+            }
+        }
+    }
 }
