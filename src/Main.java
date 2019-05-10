@@ -30,7 +30,7 @@ public class Main {
         String[] strs  = {"FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"};
         char[][] pairs = {{'a', 'b'}, {'c', 'd'}};
 
-        SumofTwoIntegers method= new SumofTwoIntegers();
+        Solution method= new Solution();
 
 
         List<String> dict = new ArrayList<>();
@@ -72,7 +72,7 @@ public class Main {
 //        ListNode n2 = new ListNode(1);
 //        ListNode n3 = new ListNode(5);
 //        n1.next = n2;
-        method.getSum(2, 3);
+        method.backspaceCompare("nzp#o#g", "b#nzp#o#g");
 //        System.out.print(method.input('i'));
 ;
     }
