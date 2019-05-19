@@ -7,7 +7,7 @@ import questions.leetcode1030.NextGreaterNodeInLinkedList;
 import questions.leetcode371.SumofTwoIntegers;
 import questions.leetcode642.AutocompleteSystem;
 import questions.weekly.Weekly;
-import questions.weekly132.Solution;
+import questions.weekly136.Solution;
 
 
 import java.io.IOException;
@@ -24,7 +24,7 @@ public class Main {
         int[] one_d_array = {3,3,3};
         int[] input2 = {3,5,7,9};
 
-        int[][] two_d_array = {{0,4},{2, 8}};
+        int[][] two_d_array = {};
 
 
         String[] strs  = {"FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"};
@@ -72,7 +72,7 @@ public class Main {
 //        ListNode n2 = new ListNode(1);
 //        ListNode n3 = new ListNode(5);
 //        n1.next = n2;
-        method.backspaceCompare("nzp#o#g", "b#nzp#o#g");
+        method.gardenNoAdj(5, two_d_array);
 //        System.out.print(method.input('i'));
 ;
     }
