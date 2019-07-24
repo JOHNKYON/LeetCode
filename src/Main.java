@@ -1,13 +1,8 @@
 import questions.dataStructure.ListNode;
 import questions.dataStructure.TreeNode;
 
-import questions.leetcode10.RegularExpressionMatching;
-import questions.leetcode1028.ConverttoBaseNeg2;
-import questions.leetcode1030.NextGreaterNodeInLinkedList;
-import questions.leetcode371.SumofTwoIntegers;
-import questions.leetcode642.AutocompleteSystem;
-import questions.weekly.Weekly;
-import questions.weekly136.Solution;
+
+import questions.leetcode1094.CarPooling;
 
 
 import java.io.IOException;
@@ -18,19 +13,20 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        int[][] A = {{0,0,1}};
+        int[][] A = {{2,1,5}, {3,3,7}};
 
 
-        int[] one_d_array = {3,3,3};
+//        int[] one_d_array = {31,26,33,21,40};
+        int[] one_d_array = {1,1,2,3,5,8,13,21,34,55,89,14,23,37,61,98};
         int[] input2 = {3,5,7,9};
 
         int[][] two_d_array = {};
 
 
-        String[] strs  = {"FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"};
+        String[] strs  = {"qyssedya","pabouk","mjwdrbqwp","vylodpmwp","nfyqeowa","pu","paboukc","qssedya","lopmw","nfyqowa","vlodpmw","mwdrqwp","opmw","qsda","neo","qyssedhyac","pmw","lodpmw","mjwdrqwp","eo","nfqwa","pabuk","nfyqwa","qssdya","qsdya","qyssedhya","pabu","nqwa","pabqoukc","pbu","mw","vlodpmwp","x","xr"};
         char[][] pairs = {{'a', 'b'}, {'c', 'd'}};
 
-        Solution method= new Solution();
+        CarPooling method= new CarPooling();
 
 
         List<String> dict = new ArrayList<>();
@@ -72,7 +68,7 @@ public class Main {
 //        ListNode n2 = new ListNode(1);
 //        ListNode n3 = new ListNode(5);
 //        n1.next = n2;
-        method.gardenNoAdj(5, two_d_array);
+        System.out.println(method.carPooling(A, 4));
 //        System.out.print(method.input('i'));
 ;
     }

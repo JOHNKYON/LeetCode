@@ -11,22 +11,22 @@ public class AutocompleteSystem {
 //        String sentence;
 //        int times;
 //    }
-//    class Trie {
+//    class MyTrie {
 //        int times;
-//        Trie[] branches = new Trie[27];
+//        MyTrie[] branches = new MyTrie[27];
 //    }
 //    public int int_(char c) {
 //        return c == ' ' ? 26 : c - 'a';
 //    }
-//    public void insert(Trie t, String s, int times) {
+//    public void insert(MyTrie t, String s, int times) {
 //        for (int i = 0; i < s.length(); i++) {
 //            if (t.branches[int_(s.charAt(i))] == null)
-//                t.branches[int_(s.charAt(i))] = new Trie();
+//                t.branches[int_(s.charAt(i))] = new MyTrie();
 //            t = t.branches[int_(s.charAt(i))];
 //        }
 //        t.times += times;
 //    }
-//    public List < Node > lookup(Trie t, String s) {
+//    public List < Node > lookup(MyTrie t, String s) {
 //        List < Node > list = new ArrayList < > ();
 //        for (int i = 0; i < s.length(); i++) {
 //            if (t.branches[int_(s.charAt(i))] == null)
@@ -36,7 +36,7 @@ public class AutocompleteSystem {
 //        traverse(s, t, list);
 //        return list;
 //    }
-//    public void traverse(String s, Trie t, List < Node > list) {
+//    public void traverse(String s, MyTrie t, List < Node > list) {
 //        if (t.times > 0)
 //            list.add(new Node(s, t.times));
 //        for (char i = 'a'; i <= 'z'; i++) {
@@ -46,9 +46,9 @@ public class AutocompleteSystem {
 //        if (t.branches[26] != null)
 //            traverse(s + ' ', t.branches[26], list);
 //    }
-//    Trie root;
+//    MyTrie root;
 //    public AutocompleteSystem(String[] sentences, int[] times) {
-//        root = new Trie();
+//        root = new MyTrie();
 //        for (int i = 0; i < sentences.length; i++) {
 //            insert(root, sentences[i], times[i]);
 //        }
