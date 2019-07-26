@@ -3,6 +3,7 @@ import questions.dataStructure.TreeNode;
 
 
 import questions.leetcode1094.CarPooling;
+import questions.leetcode903.ValidPermutationsforDISequence;
 
 
 import java.io.IOException;
@@ -26,7 +27,7 @@ public class Main {
         String[] strs  = {"qyssedya","pabouk","mjwdrbqwp","vylodpmwp","nfyqeowa","pu","paboukc","qssedya","lopmw","nfyqowa","vlodpmw","mwdrqwp","opmw","qsda","neo","qyssedhyac","pmw","lodpmw","mjwdrqwp","eo","nfqwa","pabuk","nfyqwa","qssdya","qsdya","qyssedhya","pabu","nqwa","pabqoukc","pbu","mw","vlodpmwp","x","xr"};
         char[][] pairs = {{'a', 'b'}, {'c', 'd'}};
 
-        CarPooling method= new CarPooling();
+        ValidPermutationsforDISequence method= new ValidPermutationsforDISequence();
 
 
         List<String> dict = new ArrayList<>();
@@ -68,7 +69,7 @@ public class Main {
 //        ListNode n2 = new ListNode(1);
 //        ListNode n3 = new ListNode(5);
 //        n1.next = n2;
-        System.out.println(method.carPooling(A, 4));
+        System.out.println(method.numPermsDISequence("DID"));
 //        System.out.print(method.input('i'));
 ;
     }
