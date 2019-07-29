@@ -3,8 +3,12 @@ import questions.dataStructure.TreeNode;
 
 
 import questions.leetcode1094.CarPooling;
+<<<<<<< HEAD
 import questions.leetcode5036.ConnectingCitiesWithMinimumCost;
 import questions.leetcode5037.ParallelCourses;
+=======
+import questions.leetcode903.ValidPermutationsforDISequence;
+>>>>>>> 0ee32caba8e365cdde618515ae6be154e15cc84a
 
 
 import java.io.IOException;
@@ -28,7 +32,8 @@ public class Main {
         String[] strs  = {"qyssedya","pabouk","mjwdrbqwp","vylodpmwp","nfyqeowa","pu","paboukc","qssedya","lopmw","nfyqowa","vlodpmw","mwdrqwp","opmw","qsda","neo","qyssedhyac","pmw","lodpmw","mjwdrqwp","eo","nfqwa","pabuk","nfyqwa","qssdya","qsdya","qyssedhya","pabu","nqwa","pabqoukc","pbu","mw","vlodpmwp","x","xr"};
         char[][] pairs = {{'a', 'b'}, {'c', 'd'}};
 
-        ConnectingCitiesWithMinimumCost method= new ConnectingCitiesWithMinimumCost();
+
+        ValidPermutationsforDISequence method= new ValidPermutationsforDISequence();
 
 
         List<String> dict = new ArrayList<>();
@@ -70,7 +75,8 @@ public class Main {
 //        ListNode n2 = new ListNode(1);
 //        ListNode n3 = new ListNode(5);
 //        n1.next = n2;
-        System.out.println(method.minimumCost(4, A));
+
+        System.out.println(method.numPermsDISequence("DID"));
 //        System.out.print(method.input('i'));
 ;
     }
