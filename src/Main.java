@@ -3,6 +3,8 @@ import questions.dataStructure.TreeNode;
 
 
 import questions.leetcode1094.CarPooling;
+import questions.leetcode5036.ConnectingCitiesWithMinimumCost;
+import questions.leetcode5037.ParallelCourses;
 
 
 import java.io.IOException;
@@ -13,7 +15,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        int[][] A = {{2,1,5}, {3,3,7}};
+        int[][] A = {{1,2,3},{3,4,4}};
 
 
 //        int[] one_d_array = {31,26,33,21,40};
@@ -26,7 +28,7 @@ public class Main {
         String[] strs  = {"qyssedya","pabouk","mjwdrbqwp","vylodpmwp","nfyqeowa","pu","paboukc","qssedya","lopmw","nfyqowa","vlodpmw","mwdrqwp","opmw","qsda","neo","qyssedhyac","pmw","lodpmw","mjwdrqwp","eo","nfqwa","pabuk","nfyqwa","qssdya","qsdya","qyssedhya","pabu","nqwa","pabqoukc","pbu","mw","vlodpmwp","x","xr"};
         char[][] pairs = {{'a', 'b'}, {'c', 'd'}};
 
-        CarPooling method= new CarPooling();
+        ConnectingCitiesWithMinimumCost method= new ConnectingCitiesWithMinimumCost();
 
 
         List<String> dict = new ArrayList<>();
@@ -68,7 +70,7 @@ public class Main {
 //        ListNode n2 = new ListNode(1);
 //        ListNode n3 = new ListNode(5);
 //        n1.next = n2;
-        System.out.println(method.carPooling(A, 4));
+        System.out.println(method.minimumCost(4, A));
 //        System.out.print(method.input('i'));
 ;
     }
