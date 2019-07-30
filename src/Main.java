@@ -2,13 +2,8 @@ import questions.dataStructure.ListNode;
 import questions.dataStructure.TreeNode;
 
 
-import questions.leetcode1094.CarPooling;
-<<<<<<< HEAD
-import questions.leetcode5036.ConnectingCitiesWithMinimumCost;
-import questions.leetcode5037.ParallelCourses;
-=======
+import questions.leetcode1139.Largest1BorderedSquare;
 import questions.leetcode903.ValidPermutationsforDISequence;
->>>>>>> 0ee32caba8e365cdde618515ae6be154e15cc84a
 
 
 import java.io.IOException;
@@ -19,21 +14,21 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        int[][] A = {{1,2,3},{3,4,4}};
+        int[][] A = {};
 
 
 //        int[] one_d_array = {31,26,33,21,40};
         int[] one_d_array = {1,1,2,3,5,8,13,21,34,55,89,14,23,37,61,98};
         int[] input2 = {3,5,7,9};
 
-        int[][] two_d_array = {};
+        int[][] two_d_array = {{1,1,0},{1,1,1},{1,1,1},{1,1,1}};
 
 
         String[] strs  = {"qyssedya","pabouk","mjwdrbqwp","vylodpmwp","nfyqeowa","pu","paboukc","qssedya","lopmw","nfyqowa","vlodpmw","mwdrqwp","opmw","qsda","neo","qyssedhyac","pmw","lodpmw","mjwdrqwp","eo","nfqwa","pabuk","nfyqwa","qssdya","qsdya","qyssedhya","pabu","nqwa","pabqoukc","pbu","mw","vlodpmwp","x","xr"};
         char[][] pairs = {{'a', 'b'}, {'c', 'd'}};
 
 
-        ValidPermutationsforDISequence method= new ValidPermutationsforDISequence();
+        Largest1BorderedSquare method= new Largest1BorderedSquare();
 
 
         List<String> dict = new ArrayList<>();
@@ -76,7 +71,7 @@ public class Main {
 //        ListNode n3 = new ListNode(5);
 //        n1.next = n2;
 
-        System.out.println(method.numPermsDISequence("DID"));
+        System.out.println(method.largest1BorderedSquare(two_d_array));
 //        System.out.print(method.input('i'));
 ;
     }
